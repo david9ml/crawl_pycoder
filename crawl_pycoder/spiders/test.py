@@ -3,6 +3,7 @@ from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 from PyQt4.QtWebKit import *
 from lxml import html
+import json
 
 class Render(QWebPage):
   def __init__(self, url):
@@ -30,4 +31,6 @@ tree = html.fromstring(formatted_result)
 #Now using correct Xpath we are fetching URL of archives
 #archive_links = tree.xpath('//div[class="campaign"]/a/@href')
 archive_links = tree.xpath('//div[@class="campaign"]/a/@href')
-print archive_links
+print type(archive_links)
+with open('links_out.txt', 'w+') as outfile:
+    json.dump(archive_links, outfile)

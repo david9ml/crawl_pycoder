@@ -1,0 +1,1151 @@
+<html>
+ <body>
+  <p>
+   '
+   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  </p>
+  <meta content="Pycoder\'s Weekly (Issue #54): Meteor" property="og:title"/>
+  <meta content="43929265776" property="fb:page_id"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Pycoder\'s Weekly (Issue #54): Meteor
+  </title>
+  <style type="text/css">
+   #outlook a{padding:0;}body{width:100% !important;}.ReadMsgBody{width:100%;}post.ExternalClass{width:100%;}body{-webkit-text-size-adjust:none;}body{margin:0;padding:0;}img{border:0;height:auto;line-height:100%;outline:none;text-decoration:none;}table td{border-collapse:collapse;}#bodyTable{height:100% !important;margin:0;padding:0;width:100% !important;}body,#bodyTable{background-color:#DEE0E2;}.borderBar{background-image:url(\'http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/diagborder.png\');background-position:top left;background-repeat:repeat;height:5px !important;}h1{color:#3F3A38;display:block;font-family:Georgia;font-size:40px;font-weight:normal;line-height:100%;letter-spacing:normal;margin-top:0;margin-right:0;margin-bottom:10px;margin-left:0;text-align:left;}h2{color:#3F3A38;display:block;font-family:Georgia;font-size:24px;font-weight:bold;line-height:100%;letter-spacing:normal;margin-top:0;margin-right:0;margin-bottom:10px;margin-left:0;text-align:left;}h3{color:#ED5E29;display:block;font-family:Georgia;font-size:16px;font-weight:normal;line-height:100%;letter-spacing:normal;margin-top:0;margin-right:0;margin-bottom:10px;margin-left:0;text-align:left;}h4{color:#3F3A38;display:block;font-family:Georgia;font-size:12px;font-weight:bold;line-height:100%;letter-spacing:normal;margin-top:0;margin-right:0;margin-bottom:10px;margin-left:0;text-align:left;}.preheaderContent{color:#505050;font-family:Helvetica;font-size:11px;line-height:125%;text-align:left;}.preheaderContent a:link,.preheaderContent a:visited,.preheaderContent a .yshortcuts{color:#505050;font-weight:normal;text-decoration:underline;}#templateHeader{background-color:#ffffff;border-top:10px solid #A6BFC9;padding:0px;}.headerContent{color:#505050;font-family:Helvetica;font-size:18px;font-weight:bold;line-height:100%;padding-top:20px;padding-right:40px;padding-bottom:20px;padding-left:40px;text-align:left;vertical-align:middle;}.headerContent a:link,.headerContent a:visited,.headerContent a .yshortcuts{color:#505050;font-weight:normal;text-decoration:underline;}#headerImage{height:auto;max-width:600px !important;}#templateBody{background-color:#F8F8F8;}.upperBodyContent{color:#43404D;font-family:Georgia;font-size:16px;line-height:150%;text-align:left;}.upperBodyContent a:link,.upperBodyContent a:visited,.upperBodyContent a .yshortcuts{color:#ED5E29;font-weight:normal;text-decoration:none;}.lowerBodyContent{color:#43404D;font-family:Georgia;font-size:14px;line-height:125%;text-align:left;}.lowerBodyContent a:link,.lowerBodyContent a:visited,.lowerBodyContent a .yshortcuts{color:#ED5E29;font-weight:normal;text-decoration:none;}.bodyContent img{display:inline;height:auto;}#templateFooter{background-color:#F8F8F8;border-bottom:10px solid #A6BFC9;}.footerContent{color:#3F3A38;font-family:Georgia;font-size:12px;line-height:150%;text-align:center;}.footerContent a:link,.footerContent a:visited,.footerContent a .yshortcuts{color:#EB4102;font-weight:normal;text-decoration:none;}.footerContent img{display:inline;}#monkeyRewards img{max-width:190px;}
+  </style>
+  <script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src=\'" + gaJsHost + "google-analytics.com/ga.js\' type=\'text/javascript\'%3E%3C/script%3E"));
+  </script>
+  <script src="http://www.google-analytics.com/ga.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   try {                var _gaq = _gaq || [];                _gaq.push(["_setAccount", "UA-1990784-2"]);                _gaq.push(["_setDomainName", ".campaign-archive.com"]);                _gaq.push(["_trackPageview"]);                _gaq.push(["_setAllowLinker", true]);            } catch(err) {console.log(err);}
+  </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+  </script>
+  <link href="http://us4.campaign-archive1.com/css/archivebar-desktop.css" mc:nocompile="" rel="stylesheet"/>
+  <script mc:nocompile="" src="http://us4.campaign-archive1.com/js/archivebar-desktop-plugins.js" type="text/javascript">
+  </script>
+  <script mc:nocompile="" src="http://downloads.mailchimp.com/ZeroClipboard.min.js">
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function() {                ZeroClipboard.setDefaults({ moviePath: "//downloads.mailchimp.com/ZeroClipboard.07.13.swf", trustedDomains: [\'us4.campaign-archive1.com\']});                var clip = new ZeroClipboard( $(\'#copyURL\') );                clip.setHandCursor(true);                clip.on(\'complete\', function(client, args) {alert(\'Copied "\'+args.text+\'" to your clipboard.\');});                clip.on(\'mouseover\', function (client) { $(\'#copyURL\').addClass(\'hover\'); });                clip.on(\'mouseout\', function (client) { $(\'#copyURL\').removeClass(\'hover\'); });                $(\'li.more > a\').click(function(){                    var toToggle = $($(this).attr(\'href\'));                    if(toToggle.is(\':visible\')){                        toToggle.slideUp(\'fast\');                        $(this).removeClass(\'is-active\');                        if ($(\'#awesomebar\').find(\'.is-active\').length < 1){                            $(\'#awesomebar\').removeClass(\'sub-active\');                        }                    } else {                        toToggle.slideDown(\'fast\');                        $(this).addClass(\'is-active\');                        $(\'#awesomebar\').addClass(\'sub-active\');                    }                    return false;                });            });
+  </script>
+  <script src="http://us4.campaign-archive1.com/js/mailchimp/fancyzoom.mc.js">
+  </script>
+  <script type="text/javascript">
+   function updateFacebookCommentsCount(num) {        $(\'#campaign-fb-comments-btn span\').fadeOut().html(num).fadeIn();    }
+  </script>
+  <script type="text/javascript">
+   function incrementFacebookLikeCount() {        var current = parseInt($(\'#campaign-fb-like-btn span\').html());        $(\'#campaign-fb-like-btn span\').fadeOut().html(++current).fadeIn();    }    function getUrlParams(str) {        var vars = {}, hash;        if (!str) return vars;        var hashes = str.slice(str.indexOf(\'?\') + 1).split(\'&\');        for(var i = 0; i < hashes.length; i++) {            hash = hashes[i].split(\'=\');            vars[hash[0]] = hash[1];        }        return vars;    }        function setupSocialSharingStuffs() {        var numSocialElems = $(\'a[rel=socialproxy]\').length;        var numSocialInitialized = 0;        var urlParams = getUrlParams(window.document.location.href);        var paramsToCopy = {\'e\':true, \'eo\':true};        $(\'a[rel=socialproxy]\').each(function() {            var href = $(this).attr(\'href\');            var newHref = decodeURIComponent(href.match(/socialproxy=(.*)/)[1]);            // for facebook insanity to work well, it needs to all be run against just campaign-archive            newHref = newHref.replace(/campaign-archive(\\d)/gi, \'campaign-archive\');            var newHrefParams = getUrlParams(newHref);            for(var param in urlParams) {                if ((param in paramsToCopy) && !(param in newHrefParams)) {                    newHref += \'&\' + param + \'=\' + urlParams[param];                }            }            $(this).attr(\'href\', newHref);            if (href.indexOf(\'facebook-comment\') !== -1) {                $(this).fancyZoom({"zoom_id": "social-proxy", "width":620, "height":450, "iframe_height": 450});            } else {                $(this).fancyZoom({"zoom_id": "social-proxy", "width":500, "height":200, "iframe_height": 500});            }            numSocialInitialized++;                    });    }if (window.top!=window.self){        $(function() {          var iframeOffset = $("#archive", window.parent.document).offset();          $("a").each(function () {              var link = $(this);              var href = link.attr("href");              if (href && href[0] == "#") {                  var name = href.substring(1);                  $(this).click(function () {                      var nameElement = $("[name=\'" + name + "\']");                      var idElement = $("#" + name);                      var element = null;                      if (nameElement.length > 0) {                          element = nameElement;                      } else if (idElement.length > 0) {                          element = idElement;                      }                               if (element) {                          var offset = element.offset();                          var height = element.height();                          //3 is totally arbitrary, but seems to work best.                          window.parent.scrollTo(offset.left, (offset.top + iframeOffset.top - (height*3)) );                      }                               return false;                  });              }          });        });    }
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function() {                setupSocialSharingStuffs();            });
+  </script>
+  <div id="awesomewrap">
+   <div id="awesomeshare">
+    <div id="zclipwrap">
+     <label for="shortURL">
+      Short URL
+     </label>
+     <span data-clipboard-target="shortURL" id="copyURL">
+      <input class="av-text" id="shortURL" name="shorturl" style="margin-top:6px;" type="text" value="http://eepurl.com/vLwt9"/>
+      <span>
+       Copy
+      </span>
+     </span>
+     <div id="zero_clipboard">
+     </div>
+    </div>
+    <ul id="awesomesocial">
+     <li class="fbk">
+      <a class="fbk-like" href="/?socialproxy=http%3A%2F%2Fus4.campaign-archive2.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d%26url%3Dhttp%253A%252F%252Fus4.campaign-archive2.com%252F%253Fu%253D9735795484d2e4c204da82a29%2526id%253Dc812fb6f4d%26title%3DPycoder%2527s%2520Weekly%2520%2528Issue%2520%252354%2529%253A%2520Meteor" id="campaign-fb-like-btn" rel="socialproxy" title="Like Pycoder\'s Weekly (Issue #54): Meteor on Facebook">
+       Facebook
+       <b>
+        0
+        <i>
+         likes
+        </i>
+       </b>
+      </a>
+     </li>
+     <li class="twt">
+      <a href="http://twitter.com/share?url=http%3A%2F%2Feepurl.com%2FvLwt9" target="_blank" title="Share on Twitter">
+       Twitter
+       <b>
+        6
+        <i>
+         tweets
+        </i>
+       </b>
+      </a>
+     </li>
+     <li class="ggl">
+      <a class="twitter-share-button" href="http://us4.campaign-archive1.com/?u=9735795484d2e4c204da82a29&amp;id=c812fb6f4d&amp;socialproxy=http%3A%2F%2Fus4.campaign-archive2.com%2Fsocial-proxy%2Fgoogle-plus-one%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d%26url%3Dhttp%253A%252F%252Fus4.campaign-archive1.com%252F%253Fu%253D9735795484d2e4c204da82a29%2526id%253Dc812fb6f4d%26title%3DPycoder%2527s%2520Weekly%2520%2528Issue%2520%252354%2529%253A%2520Meteor" id="campaign-gpo-btn" rel="socialproxy" title="+1 on Google Plus">
+       Google +1
+      </a>
+     </li>
+    </ul>
+   </div>
+   <ul id="awesomebar">
+    <li>
+     <a href="http://eepurl.com/iDqTX" target="_blank" title="Subscribe to List">
+      Subscribe
+     </a>
+    </li>
+    <li class="more" id="toggleshare">
+     <a href="#awesomeshare">
+      Share
+     </a>
+    </li>
+    <li>
+     <a href="http://us4.campaign-archive1.com/home/?u=9735795484d2e4c204da82a29&amp;id=64134e0a27" target="_blank" title="View Past Issues">
+      Past Issues
+     </a>
+    </li>
+    <li class="float-r">
+     <a class="rss" href="http://us4.campaign-archive1.com/feed?u=9735795484d2e4c204da82a29&amp;id=64134e0a27" target="_blank" title="subscribe to the email archive feed">
+      RSS
+     </a>
+    </li>
+    <li class="float-r more">
+     <a href="#translate">
+      Translate
+     </a>
+     <ul id="translate">
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|en&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="English">
+        English
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ar&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="???????">
+        ???????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|af&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Afrikaans">
+        Afrikaans
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|be&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="?????????? ????">
+        ?????????? ????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|bg&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="?????????">
+        ?????????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ca&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="catal\xe0">
+        catal\xe0
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|zh-CN&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="??????">
+        ??????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|zh-TW&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="??????">
+        ??????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|hr&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Hrvatski">
+        Hrvatski
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|cs&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="?esky">
+        ?esky
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|da&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Dansk">
+        Dansk
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|et&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="eesti&amp;nbsp;keel">
+        eesti keel
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|nl&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Nederlands">
+        Nederlands
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|fi&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Suomi">
+        Suomi
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|fr&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Fran&amp;ccedil;ais">
+        Fran\xe7ais
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|de&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Deutsch">
+        Deutsch
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|el&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="&amp;Epsilon;&amp;lambda;&amp;lambda;&amp;eta;&amp;nu;&amp;iota;&amp;kappa;?">
+        ????????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|hi&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="??????">
+        ??????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|hu&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Magyar">
+        Magyar
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ga&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Gaeilge">
+        Gaeilge
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|id&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Indonesia">
+        Indonesia
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|is&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="\xedslenska">
+        \xedslenska
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|it&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Italiano">
+        Italiano
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ja&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="???">
+        ???
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ko&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="???">
+        ???
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|mk&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="??????????&amp;nbsp;?????">
+        ?????????? ?????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ms&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="???? ?????">
+        ???? ?????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|mt&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Malti">
+        Malti
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|no&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Norsk">
+        Norsk
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|pl&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Polski">
+        Polski
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|pt&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Portugu&amp;ecirc;s">
+        Portugu\xeas
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|pt-PT&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Portugu&amp;ecirc;s&amp;nbsp;-&amp;nbsp;Portugal">
+        Portugu\xeas - Portugal
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ro&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Rom&amp;acirc;n?">
+        Rom\xe2n?
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ru&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="???????">
+        ???????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|es&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Espa&amp;ntilde;ol">
+        Espa\xf1ol
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|sw&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Kiswahili">
+        Kiswahili
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|sv&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Svenska">
+        Svenska
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|iw&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="?????">
+        ?????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|lt&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Lietuvi?">
+        Lietuvi?
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|lv&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="latvie?u">
+        latvie?u
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|sk&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="sloven?ina">
+        sloven?ina
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|sl&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="sloven??ina">
+        sloven??ina
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|sr&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="??????">
+        ??????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|th&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="???????">
+        ???????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|tr&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="T\xfcrk\xe7e">
+        T\xfcrk\xe7e
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|tl&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Filipino">
+        Filipino
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|uk&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="???????????">
+        ???????????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|vi&amp;u=http%3A%2F%2Fus4.campaign-archive1.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3Dc812fb6f4d" rel="nofollow" title="Ti?ng&amp;nbsp;Vi?t">
+        Ti?ng Vi?t
+       </a>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <center>
+   <table border="0" cellpadding="0" cellspacing="0" height="100%" id="bodyTable" style="margin: 0;padding: 0;background-color: #DEE0E2;height: 100% !important;width: 100% !important;" width="100%">
+    <tbody>
+     <tr>
+      <td align="center" style="padding-bottom: 40px;border-collapse: collapse;" valign="top">
+       <!-- // BEGIN CONTAINER -->
+       <table border="0" cellpadding="0" cellspacing="0" id="templateContainer" width="600">
+        <tbody>
+         <tr>
+          <td align="center" style="padding-bottom: 20px;border-collapse: collapse;" valign="top">
+           <!-- // BEGIN PREHEADER -->
+           <table border="0" cellpadding="0" cellspacing="0" id="templatePreheader" width="600">
+            <tbody>
+             <tr>
+              <td align="center" style="padding-top: 10px;padding-bottom: 10px;border-collapse: collapse;" valign="top">
+               <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                 <tr>
+                  <td class="preheaderContent" style="border-collapse: collapse;color: #505050;font-family: Helvetica;font-size: 11px;line-height: 125%;text-align: left;" valign="top">
+                   More security, pudb, Python documentation and much more.
+                  </td>
+                  <!-- -->
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <!-- END PREHEADER \\\\ -->
+          </td>
+         </tr>
+         <tr>
+          <td align="center" style="border-collapse: collapse;" valign="top">
+           <!-- // BEGIN HEADER -->
+           <table border="0" cellpadding="0" cellspacing="0" id="templateHeader" style="background-color: #ffffff;border-top: 10px solid #A6BFC9;padding: 0px;" width="600">
+            <tbody>
+             <tr>
+              <td align="center" style="padding-top: 20px;padding-bottom: 20px;border-collapse: collapse;" valign="top">
+               <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                 <tr>
+                  <td class="headerContent" style="border-collapse: collapse;color: #505050;font-family: Helvetica;font-size: 18px;font-weight: bold;line-height: 100%;padding-top: 20px;padding-right: 40px;padding-bottom: 20px;padding-left: 40px;text-align: left;vertical-align: middle;">
+                   <img alt="" border="0" id="headerImage campaign-icon" src="http://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/image_13294418120261329441812.jpg" style="margin: 0;padding: 0;max-width: 600px;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"/>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="headerContent" style="border-collapse: collapse;color: #505050;font-family: Helvetica;font-size: 18px;font-weight: bold;line-height: 100%;padding-top: 20px;padding-right: 40px;padding-bottom: 20px;padding-left: 40px;text-align: left;vertical-align: middle;">
+                   <h1 style="color: #3F3A38;display: block;font-family: Georgia;font-size: 40px;font-weight: normal;line-height: 100%;letter-spacing: normal;margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;text-align: left;">
+                    Issue #54: Meteor
+                   </h1>
+                   <span style="display: none; ">
+                   </span>
+                   <h3 style="color: #ED5E29;display: block;font-family: Georgia;font-size: 16px;font-weight: normal;line-height: 100%;letter-spacing: normal;margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;text-align: left;">
+                    <span style="color:#808080;">
+                     <i>
+                      Friday,  February 22nd, 2013
+                     </i>
+                    </span>
+                   </h3>
+                   <div style="text-align: left; ">
+                    <br/>
+                    <b id="internal-source-marker_0.9319777826312929" style="color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal; -webkit-text-size-adjust: auto; font-weight: normal;">
+                     <span style="font-size: 15px; font-family: Georgia; color: rgb(80, 80, 80); background-color: transparent; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">
+                      Hi Pythonistas!
+                     </span>
+                     <br/>
+                     <br/>
+                     <span style="font-size: 15px; font-family: Georgia; color: rgb(80, 80, 80); background-color: transparent; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">
+                      Jam packed issue this week. More security news so be sure to keep an eye out for things that affect you.
+                     </span>
+                     <br/>
+                     <br/>
+                     <span style="font-size: 15px; font-family: Georgia; color: rgb(80, 80, 80); background-color: transparent; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">
+                      Be sure to check out all the jobs at
+                     </span>
+                     <a href="http://pythonjobshq.com/" style="color: #505050;font-weight: normal;text-decoration: underline;">
+                      <span style="font-size: 15px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">
+                       http://pythonjobshq.com
+                      </span>
+                     </a>
+                     <span style="font-size: 19px; font-family: Georgia; color: rgb(80, 80, 80); background-color: transparent; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">
+                     </span>
+                     <span style="font-size: 15px; font-family: Georgia; color: rgb(80, 80, 80); background-color: transparent; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">
+                      If you are interested in posting a position of your own, or looking for a new gig.
+                     </span>
+                     <br/>
+                     <br/>
+                     <span style="font-size: 15px; font-family: Georgia; color: rgb(80, 80, 80); background-color: transparent; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">
+                      As always, if you have any questions, comments, gripes or suggestions just hit reply to this email and let us know.
+                     </span>
+                     <br/>
+                     <br/>
+                     <span style="font-size: 15px; font-family: Georgia; color: rgb(80, 80, 80); background-color: transparent; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">
+                      To keep up with all the breaking Python news follow
+                     </span>
+                     <a href="http://twitter.com/pycoders" style="color: #505050;font-weight: normal;text-decoration: underline;">
+                      <span style="font-size: 15px; font-family: Georgia; color: rgb(80, 80, 80); background-color: rgb(248, 248, 248); vertical-align: baseline; white-space: pre-wrap;">
+                       @pycoders
+                      </span>
+                     </a>
+                     <span style="font-size: 15px; font-family: Georgia; color: rgb(80, 80, 80); background-color: transparent; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">
+                      .
+                     </span>
+                     <br/>
+                     <br/>
+                     <span style="font-size: 15px; font-family: Georgia; color: rgb(80, 80, 80); background-color: transparent; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">
+                      Support us on
+                     </span>
+                     <a href="https://www.gittip.com/PycodersWeekly" style="color: #505050;font-weight: normal;text-decoration: underline;">
+                      <span style="font-size: 15px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">
+                       Gittip
+                      </span>
+                     </a>
+                     <span style="font-size: 15px; font-family: Georgia; color: rgb(80, 80, 80); background-color: transparent; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">
+                     </span>
+                     <br/>
+                     <br/>
+                     <span style="font-size: 15px; font-family: Georgia; color: rgb(80, 80, 80); background-color: transparent; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">
+                      * Title is in reference to the Meteor that lit up Russia this past week not some fancy dancy JavaScript framework.
+                     </span>
+                    </b>
+                    <br/>
+                   </div>
+                   <div style="text-align: left; ">
+                    <span style="font-size: 14px;">
+                     --
+                    </span>
+                    <br/>
+                    <span style="font-size:14px;">
+                     <span>
+                      <a href="https://twitter.com/#!/myusuf3" style="color: #505050;font-weight: normal;text-decoration: underline;">
+                       Mahdi
+                      </a>
+                      and
+                      <a href="https://twitter.com/#!/mgrouchy" style="color: #505050;font-weight: normal;text-decoration: underline;">
+                       Mike
+                      </a>
+                     </span>
+                    </span>
+                    <span style="display: none; ">
+                    </span>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <!-- END HEADER \\\\ -->
+          </td>
+         </tr>
+         <tr>
+          <td align="center" style="border-collapse: collapse;" valign="top">
+           <!-- // BEGIN BODY -->
+           <table border="0" cellpadding="40" cellspacing="0" id="templateBody" style="background-color: #F8F8F8;" width="600">
+            <tbody>
+             <tr>
+              <td align="center" style="padding-top: 20px;padding-bottom: 20px;border-collapse: collapse;" valign="top">
+               <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                 <tr>
+                  <td class="upperBodyContent" style="border-collapse: collapse;color: #43404D;font-family: Georgia;font-size: 16px;line-height: 150%;text-align: left;" valign="top">
+                   <b id="internal-source-marker_0.584197671385482" style="font-weight: normal;">
+                    <span style="font-size: 32px; vertical-align: baseline; white-space: pre-wrap;">
+                     News and Developments.
+                    </span>
+                   </b>
+                   <br/>
+                   <br/>
+                   <b id="internal-source-marker_0.9319777826312929" style="color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal; -webkit-text-size-adjust: auto; font-weight: normal;">
+                    <a href="http://blog.python.org/2013/02/announcing-defusedxml-fixes-for-xml.html" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      Announcing defusedxml, Fixes for XML Security Issues
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                    </span>
+                    <span style="font-size: 13px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (python.org)
+                    </span>
+                    <br/>
+                    <a href="https://bitbucket.org/tiran/defusedxml" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      Defusedxml
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     and
+                    </span>
+                    <a href="https://bitbucket.org/tiran/defusedexpat" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      defusedxpat
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     are packages to address some of the recent XML-related security issues in Python. Click through for more detailed information.
+                    </span>
+                    <br/>
+                    <br/>
+                    <a href="http://pyfound.blogspot.ca/2013/02/an-update-on-our-trademark-issue.html" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      An Update on Our Trademark Issue
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                    </span>
+                    <span style="font-size: 13px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (blogspot.ca)
+                    </span>
+                    <br/>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     Van Lindberg, Python Software Foundation Chairman gives a brief update on the EU ?Python? trademark issue.
+                    </span>
+                    <br/>
+                    <br/>
+                    <a href="https://www.djangoproject.com/weblog/2013/feb/20/updated-releases-issued/" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      Django Security Release Issued
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (djangoproject.com)
+                    </span>
+                    <br/>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     There were two security releases this week for Django one dealing with the XML issues mentioned above and others. This one was to deal with the inclusion of some *.pyc files in the initial security fix release.
+                    </span>
+                   </b>
+                   <br/>
+                   <br/>
+                   <strong>
+                    From our sponsors:
+                   </strong>
+                   <table>
+                    <tbody>
+                     <tr>
+                      <td style="border-collapse: collapse;" width="130">
+                       <b id="internal-source-marker_0.584197671385482" style="font-weight: normal;">
+                        <a href="http://launchbit.com/taz/574-5855-*|EMAIL_UID|*" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                         <img src="http://launchbit.com/taz-i/5855-f3e14e266616132268cc817296f2180b1b37a8c0-text.png" style="border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"/>
+                        </a>
+                       </b>
+                      </td>
+                      <td style="border-collapse: collapse;">
+                       <b id="internal-source-marker_0.584197671385482" style="font-weight: normal;">
+                        <span style="font-size:14px;">
+                         <a href="http://launchbit.com/taz/574-5855-*|EMAIL_UID|*" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                          Filepicker
+                         </a>
+                         Take the headache out of file uploads. Connect, Process, and Store any file from anywhere on the Internet.
+                         <br/>
+                         (
+                         <a href="http://launchbit.com/sp/741-574/">
+                          Sponsor this newsletter
+                         </a>
+                         )
+                         <img src="http://launchbit.com/taz-pixel/574-5855-*|EMAIL_UID|*" style="border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"/>
+                        </span>
+                       </b>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <b id="internal-source-marker_0.584197671385482" style="font-weight: normal;">
+                    <br/>
+                    <br/>
+                    <span style="font-size: 32px; vertical-align: baseline; white-space: pre-wrap;">
+                     Discussions.
+                    </span>
+                   </b>
+                   <br/>
+                   <br/>
+                   <b id="internal-source-marker_0.9319777826312929" style="color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal; -webkit-text-size-adjust: auto; font-weight: normal;">
+                    <a href="http://www.reddit.com/r/Python/comments/18ssb6/the_python_documentation_is_bad_and_you_should/" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      The Python documentation is bad and you should feel bad
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                    </span>
+                    <span style="font-size: 13px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (reddit.com)
+                    </span>
+                   </b>
+                   <br/>
+                   <br/>
+                   <span style="font-size: 32px; white-space: pre-wrap;">
+                    Projects.
+                   </span>
+                   <br/>
+                   <br/>
+                   <b id="internal-source-marker_0.9319777826312929" style="font-size: medium; color: rgb(0, 0, 0); font-family: Times; line-height: normal; -webkit-text-size-adjust: auto; font-weight: normal;">
+                    <a href="https://pypi.python.org/pypi/pudb" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      pudb
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                    </span>
+                    <span style="font-size: 13px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (python.org)
+                    </span>
+                   </b>
+                   <br/>
+                   <b id="internal-source-marker_0.9319777826312929" style="color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal; -webkit-text-size-adjust: auto; font-weight: normal;">
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     pudb is a full screen console based debugger for Python.
+                    </span>
+                    <br/>
+                    <br/>
+                    <a href="https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      Probabilistic Programming and Bayesian Methods for Hackers
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                    </span>
+                    <span style="font-size: 13px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (github.com)
+                    </span>
+                    <br/>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     This is pretty excellent, a book which is an Introduction to Bayesian Methods and probabilistic programming for data analysis. It has downloadable iPython Notebooks for each chapter.
+                    </span>
+                    <br/>
+                    <br/>
+                    <a href="https://github.com/amitu/importd/" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      importd
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                    </span>
+                    <span style="font-size: 13px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (github.com)
+                    </span>
+                    <br/>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     Interesting as a thought experiment, caution to all who proceed.
+                    </span>
+                    <br/>
+                    <br/>
+                    <a href="https://github.com/disqus/django-mailviews" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      django-mailviews
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                    </span>
+                    <span style="font-size: 13px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (github.com)
+                    </span>
+                    <br/>
+                    <span style="font-size: 16px; font-family: Georgia; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; white-space: pre-wrap;">
+                     Rendering and sending emails in Django can quickly become repetitive and error-prone. By encapsulating message rendering within view classes, you can easily compose messages in a structured and clear manner. Clearly pretty awesome.
+                    </span>
+                    <br/>
+                    <br/>
+                    <a href="https://github.com/ericflo/django-simplestatic" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      django-simplestatic
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                    </span>
+                    <span style="font-size: 13px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (github.com)
+                    </span>
+                    <br/>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     A highly opinionated drop-in library for static file management in Django, if you share his views this likely be an awesome addon.
+                    </span>
+                    <br/>
+                    <br/>
+                    <a href="https://github.com/mgrouchy/django-stronghold" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      django-stronghold
+                     </span>
+                    </a>
+                    <span style="font-size: 13px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (github.com)
+                    </span>
+                    <br/>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     Tired of littering login_required decorators all over the place? Get inside your stronghold and make all your Django views default login_required.
+                    </span>
+                    <br/>
+                    <br/>
+                    <a href="http://compilers.pydata.org/" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      CPython Compiler Tools
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                    </span>
+                    <span style="font-size: 13px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (pydata.org)
+                    </span>
+                   </b>
+                   <br/>
+                   <br/>
+                   <br/>
+                   <!-- Advert (Bottom) -->
+                   <table border="0" cellpadding="0" cellspacing="0" style="padding-top:10px;padding-bottom:0;" width="520">
+                    <tbody>
+                     <tr>
+                      <td background="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/diagborder.png" class="borderBar" style="border-collapse:collapse;background-image:url(http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/diagborder.png);background-position:top left;background-repeat:repeat;height:5px !important;" valign="top" width="320">
+                       <b id="internal-source-marker_0.584197671385482" style="font-weight: normal;">
+                        <img height="5" src="http://gallery.mailchimp.com/2425ea8ad3/images/blank.gif" style="display: block;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;" width="5"/>
+                       </b>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td class="lowerBodyContent" style="padding-top:15px;border-collapse:collapse;color:#43404D;font-family:Georgia;font-size:14px;line-height:125%;text-align:left;" valign="top" width="320">
+                       <h4 style="color: #000;display: block;font-family: Georgia;font-size: 13px;font-weight: bold;line-height: 100%;letter-spacing: normal;margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;text-align: left;">
+                        <b id="internal-source-marker_0.584197671385482" style="font-weight: normal;">
+                         PYCODER\'S JOBS
+                        </b>
+                       </h4>
+                       <p style="font-size:14px;font-weight:normal;margin-top:8px;">
+                        <b id="internal-source-marker_0.584197671385482" style="font-weight: normal;">
+                         Looking for an awesome employer? Looking to hire incredible python development talent? You will definitely want to checkout the
+                         <a href="http://jobs.pycoders.com" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                          Pycoder\'s Job Board
+                         </a>
+                         .
+                        </b>
+                       </p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td background="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/diagborder.png" class="borderBar" style="border-collapse:collapse;background-image:url(http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/diagborder.png);background-position:top left;background-repeat:repeat;height:5px !important;" valign="top" width="320">
+                       <b id="internal-source-marker_0.584197671385482" style="font-weight: normal;">
+                        <img height="5" src="http://gallery.mailchimp.com/2425ea8ad3/images/blank.gif" style="display: block;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;" width="5"/>
+                       </b>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <b id="internal-source-marker_0.584197671385482" style="font-weight: normal;">
+                    <!-- /Advert (Bottom) -->
+                    <br/>
+                    <span style="font-size: 32px; vertical-align: baseline; white-space: pre-wrap;">
+                     Articles.
+                    </span>
+                   </b>
+                   <br/>
+                   <br/>
+                   <b id="internal-source-marker_0.9319777826312929" style="color: rgb(0, 0, 0); font-family: Times; font-size: medium; line-height: normal; -webkit-text-size-adjust: auto; font-weight: normal;">
+                    <a href="http://alexgaynor.net/2013/feb/16/disambiguating-bson-and-msgpack/" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      Disambiguating BSON and msgpack
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                    </span>
+                    <span style="font-size: 13px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (alexgaynor.net)
+                    </span>
+                    <br/>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     Alex Gaynor explains in this article the strategy used to migrate stored
+                    </span>
+                    <a href="http://bsonspec.org/" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      BSON
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     data to
+                    </span>
+                    <a href="http://msgpack.org/" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      msgpack
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     in place.
+                    </span>
+                    <br/>
+                    <br/>
+                    <a href="http://alex.nisnevich.com/blog/2013/02/19/face_tracking_with_open_cv_and_a_usb_missile_launcher.html" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      Face Tracking with OpenCV and a USB Missile Launcher
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                    </span>
+                    <span style="font-size: 13px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (nisnevich.com)
+                    </span>
+                    <br/>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     This is so awesome. If you like cameras with turrets attached to them and python this will be right up your alley.
+                    </span>
+                    <br/>
+                    <br/>
+                    <a href="http://blog.apps.npr.org/2013/02/14/app-template-redux.html" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      Build a news application that doesn\'t go down.
+                     </span>
+                    </a>
+                    <span style="font-size: 13px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (npr.org)
+                    </span>
+                    <br/>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     Bold statements by Katie at NPR. In this article they outline how to build reliable low cost web applications with
+                    </span>
+                    <a href="http://jinja.pocoo.org/" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      Flask
+                     </span>
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(0, 0, 0); background-color: transparent; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">
+                      ,
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                    </span>
+                    <a href="http://jinja.pocoo.org/" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      Jinja2
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     and some JavaScript. Read the article then check out their
+                    </span>
+                    <a href="https://github.com/nprapps/app-template" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      app template
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     .
+                    </span>
+                    <br/>
+                    <br/>
+                    <a href="http://blog.briancurtin.com/posts/why-i-dont-feel-so-bad.html" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      Why I don\'t feel so bad
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                    </span>
+                    <span style="font-size: 13px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (briancurtin.com)
+                    </span>
+                    <br/>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     A rebuttal to the Python documentation is bad and you should feel bad, maybe a little more grounded in reality argument.
+                    </span>
+                    <br/>
+                    <br/>
+                    <a href="http://mattupstate.github.com/python/html5/2013/02/13/tailing-celery-task-output-to-browser-using-gevent-socketio-and-redis-pub-sub.html" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      Tailing Celery Output to Browser
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                    </span>
+                    <span style="font-size: 13px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (github.com)
+                    </span>
+                    <br/>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     Cool article on how to setup a travis-ci.org like tail of a process in the browser.
+                    </span>
+                    <br/>
+                    <br/>
+                    <a href="http://www.vurt.ru/2013/02/python-command-line-oneliners/" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                     <span style="font-size: 16px; font-family: Georgia; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                      Python one-liners
+                     </span>
+                    </a>
+                    <span style="font-size: 16px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                    </span>
+                    <span style="font-size: 13px; font-family: Georgia; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">
+                     (vert.ru)
+                    </span>
+                   </b>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td align="center" style="padding-top: 40px;border-collapse: collapse;" valign="top">
+                   <table border="0" cellpadding="0" cellspacing="0" width="520">
+                    <tbody>
+                     <tr>
+                      <td background="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/diagborder.png" class="borderBar" style="border-collapse: collapse;background-image: url(http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/diagborder.png);background-position: top left;background-repeat: repeat;height: 5px !important;" valign="top" width="180">
+                       <img height="5" src="http://gallery.mailchimp.com/2425ea8ad3/images/blank.gif" style="display: block;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;" width="5"/>
+                      </td>
+                      <td style="border-collapse: collapse;" width="20">
+                       <img height="5" src="http://gallery.mailchimp.com/2425ea8ad3/images/blank.gif" style="display: block;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;" width="5"/>
+                      </td>
+                      <td background="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/diagborder.png" class="borderBar" style="border-collapse: collapse;background-image: url(http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/diagborder.png);background-position: top left;background-repeat: repeat;height: 5px !important;" valign="top" width="320">
+                       <img height="5" src="http://gallery.mailchimp.com/2425ea8ad3/images/blank.gif" style="display: block;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;" width="5"/>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td style="border-collapse: collapse;" valign="top" width="180">
+                       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                         <tr>
+                          <td class="lowerBodyContent" style="padding-top: 15px;border-collapse: collapse;color: #43404D;font-family: Georgia;font-size: 14px;line-height: 125%;text-align: left;" valign="top">
+                           <h4 style="color: #3F3A38;display: block;font-family: Georgia;font-size: 12px;font-weight: bold;line-height: 100%;letter-spacing: normal;margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;text-align: left;">
+                            UPCOMING EVENTS
+                           </h4>
+                          </td>
+                         </tr>
+                         <tr mc:hideable="hideable_repeat_1_1" mc:repeatable="repeat_1" mc:repeatindex="0" mchideable="hideable_repeat_1_1">
+                          <td class="lowerBodyContent" style="padding-bottom: 10px;border-collapse: collapse;color: #43404D;font-family: Georgia;font-size: 14px;line-height: 125%;text-align: left;" valign="top">
+                           <a href="http://pycoders.com" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                            <span style="color:#0000cd;">
+                             <span style="font-weight: normal; text-decoration: none; ">
+                              <span style="font-weight: normal; text-decoration: none; ">
+                               <span style="font-weight: normal; text-decoration: none; ">
+                                Pycoder\'s Weekly Issue #
+                               </span>
+                              </span>
+                             </span>
+                            </span>
+                           </a>
+                           <span style="font-weight: normal; text-decoration: none; ">
+                            <span style="font-weight: normal; text-decoration: none; ">
+                             <span style="font-weight: normal; text-decoration: none; ">
+                              <span style="font-weight: normal; text-decoration: none; ">
+                               <a style="color: rgb(237, 94, 41); font-weight: normal; text-decoration: none; ">
+                               </a>
+                               <a style="font-weight: normal;text-decoration: initial;color: #ED5E29;">
+                                <font color="#0000cd">
+                                 55
+                                </font>
+                               </a>
+                              </span>
+                             </span>
+                            </span>
+                           </span>
+                           <br/>
+                           March 1st, 2012
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </td>
+                      <td style="padding-top: 15px;border-collapse: collapse;" width="20">
+                       <br/>
+                      </td>
+                      <td class="lowerBodyContent" style="padding-top: 15px;border-collapse: collapse;color: #43404D;font-family: Georgia;font-size: 14px;line-height: 125%;text-align: left;" valign="top" width="320">
+                       <h4 style="color: #3F3A38;display: block;font-family: Georgia;font-size: 12px;font-weight: bold;line-height: 100%;letter-spacing: normal;margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;text-align: left;">
+                        ABOUT THE CURATORS
+                       </h4>
+                       This mailing list has been hand picked by
+                       <a href="http://twitter.com/myusuf3" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                        <span style="color:#0000ff;">
+                         Mahdi Yusuf
+                        </span>
+                       </a>
+                       and
+                       <a href="http://twitter.com/mgrouchy" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                        <span style="color:#0000ff;">
+                         Mike Grouchy
+                        </span>
+                       </a>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <!-- Postmates Advert (Bottom) -->
+                   <table border="0" cellpadding="0" cellspacing="0" style="padding-top:10px;padding-bottom:0;" width="520">
+                    <tbody>
+                     <tr>
+                      <td background="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/diagborder.png" class="borderBar" style="border-collapse:collapse;background-image:url(http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/diagborder.png);background-position:top left;background-repeat:repeat;height:5px !important;" valign="top" width="320">
+                       <img height="5" src="http://gallery.mailchimp.com/2425ea8ad3/images/blank.gif" style="display: block;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;" width="5"/>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td class="lowerBodyContent" style="padding-top:15px;border-collapse:collapse;color:#43404D;font-family:Georgia;font-size:14px;line-height:125%;text-align:left;" valign="top" width="320">
+                       <p style="font-size:14px;font-weight:normal;margin-top:8px;">
+                        <a href="http://launchbit.com/az/741-573/" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                         <img height="60" src="http://launchbit.com/az-images/741-573/" style="border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;" width="468"/>
+                        </a>
+                        <br/>
+                        <small>
+                         (
+                         <a href="http://launchbit.com/sp/741-573/" style="color: #ED5E29;font-weight: normal;text-decoration: none;">
+                          Sponsor this newsletter
+                         </a>
+                         )
+                        </small>
+                       </p>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <!-- /Postmates Advert (Bottom) -->
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <!-- END BODY \\\\ -->
+          </td>
+         </tr>
+         <tr>
+          <td align="center" style="border-collapse: collapse;" valign="top">
+           <!-- // BEGIN FOOTER -->
+           <table border="0" cellpadding="20" cellspacing="0" id="templateFooter" style="background-color: #F8F8F8;border-bottom: 10px solid #A6BFC9;" width="600">
+            <tbody>
+             <tr>
+              <td align="center" style="padding-right: 40px;padding-left: 40px;border-collapse: collapse;" valign="top">
+               <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                 <tr>
+                  <td class="footerContent" style="border-top: 1px solid #BBBBBB;border-bottom: 1px solid #BBBBBB;padding-top: 20px;padding-bottom: 20px;border-collapse: collapse;color: #3F3A38;font-family: Georgia;font-size: 12px;line-height: 150%;text-align: center;" valign="top">
+                   <a href="http://twitter.com/#!/pycoders" style="color: #EB4102;font-weight: normal;text-decoration: none;">
+                    <span style="color:#0000ff;">
+                     Follow on Twitter
+                    </span>
+                   </a>
+                   <span style="color:#0000ff;">
+                    |
+                   </span>
+                   <a href="https://www.facebook.com/pages/Pycoders-Weekly/318272948220304?sk=wall" style="color: #EB4102;font-weight: normal;text-decoration: none;">
+                    <span style="color:#0000ff;">
+                     Friend on Facebook
+                    </span>
+                   </a>
+                   <span style="color:#0000ff;">
+                    |
+                   </span>
+                   <a href="http://us4.forward-to-friend1.com/forward?u=9735795484d2e4c204da82a29&amp;id=c812fb6f4d&amp;e=[UNIQID]" style="color: #EB4102;font-weight: normal;text-decoration: none;">
+                    <span style="color:#0000ff;">
+                     Forward to Friend
+                    </span>
+                   </a>
+                   <span style="color:#0000ff;">
+                   </span>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="footerContent" style="padding-top: 20px;border-collapse: collapse;color: #3F3A38;font-family: Georgia;font-size: 12px;line-height: 150%;text-align: center;" valign="top">
+                   <em>
+                    Copyright \xa9 2013 Pycoder\'s Weekly, All rights reserved.
+                   </em>
+                   <br/>
+                   <br/>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="footerContent" style="padding-top: 20px;border-collapse: collapse;color: #3F3A38;font-family: Georgia;font-size: 12px;line-height: 150%;text-align: center;" valign="top">
+                   <a href="http://pycoders.us4.list-manage.com/unsubscribe?u=9735795484d2e4c204da82a29&amp;id=64134e0a27&amp;e=[UNIQID]&amp;c=c812fb6f4d" style="color: #EB4102;font-weight: normal;text-decoration: none;">
+                    <span style="color:#0000ff;">
+                     unsubscribe from this list
+                    </span>
+                   </a>
+                   <span style="color:#0000ff;">
+                    |
+                   </span>
+                   <a href="http://pycoders.us4.list-manage2.com/profile?u=9735795484d2e4c204da82a29&amp;id=64134e0a27&amp;e=[UNIQID]" style="color: #EB4102;font-weight: normal;text-decoration: none;">
+                    <span style="color:#0000ff;">
+                     update subscription preferences
+                    </span>
+                   </a>
+                   <span style="color:#0000ff;">
+                   </span>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <!-- END FOOTER \\\\ -->
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- END CONTAINER \\\\ -->
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </center>
+  '
+ </body>
+</html>

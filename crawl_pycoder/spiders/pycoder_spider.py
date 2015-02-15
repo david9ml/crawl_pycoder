@@ -1,4 +1,10 @@
 import scrapy
+import sys
+from PyQt4.QtGui import *
+from PyQt4.QtCore import *
+from PyQt4.QtWebKit import *
+from lxml import html
+
 
 class PycoderSpider(scrapy.Spider):
     name = "pycoder"
@@ -7,7 +13,12 @@ class PycoderSpider(scrapy.Spider):
         "http://pycoders.com/archive/"
     ]
 
-    def parse(self, response):
+    def start_requests(self):
+        requests = list(super(MySpider, self).start_requests())
+        #requests += [scrapy.Request(x, self.parse_other) for x in self.other_urls]
+        return requests
+
+    parse(self,tart_requests(self):
         filename = response.url.split("/")[-2]
         with open(filename, 'wb') as f:
             f.write(response.body)
