@@ -1,0 +1,1945 @@
+<html>
+ <body>
+  <p>
+   '
+   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  </p>
+  <meta content="43929265776" property="fb:page_id"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png" name="twitter:image:src"/>
+  <meta content="Click to check out the latest issue of Pycoder\'s Weekly! " name="twitter:description"/>
+  <meta content="Pycoders Weekly (Issue #217): I/O" name="twitter:title"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="article" property="og:type"/>
+  <meta content="Click to check out the latest issue of Pycoder\'s Weekly! " property="og:description"/>
+  <meta content="https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png" property="og:image"/>
+  <meta content="Pycoders Weekly (Issue #217): I/O" property="og:title"/>
+  <meta content="http://eepurl.com/b2uofX" property="og:url"/>
+  <!-- NAME: 1 COLUMN - BANDED -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Pycoders Weekly (Issue #217):  I/O
+  </title>
+  <style type="text/css">
+   body,#bodyTable,#bodyCell{height:100% !important;margin:0;padding:0;width:100% !important;}table{border-collapse:collapse;}img,a img{border:0;outline:none;text-decoration:none;}h1,h2,h3,h4,h5,h6{margin:0;padding:0;}p{margin:1em 0;padding:0;}a{word-wrap:break-word;}.ReadMsgBody{width:100%;}.ExternalClass{width:100%;}.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div{line-height:100%;}table,td{mso-table-lspace:0pt;mso-table-rspace:0pt;}#outlook a{padding:0;}img{-ms-interpolation-mode:bicubic;}body,table,td,p,a,li,blockquote{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}#bodyCell{padding:0;}.mcnImage{vertical-align:bottom;}.mcnTextContent img{height:auto !important;}body,#bodyTable{background-color:#F2F2F2;}#bodyCell{border-top:0;}h1{color:#606060 !important;display:block;font-family:Helvetica;font-size:40px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:-1px;margin:0;text-align:left;}h2{color:#404040 !important;display:block;font-family:Helvetica;font-size:26px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:-.75px;margin:0;text-align:left;}h3{color:#606060 !important;display:block;font-family:Helvetica;font-size:18px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:-.5px;margin:0;text-align:left;}h4{color:#808080 !important;display:block;font-family:Helvetica;font-size:16px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:normal;margin:0;text-align:left;}#templatePreheader{background-color:#3399cc;border-top:0;border-bottom:0;}.preheaderContainer .mcnTextContent,.preheaderContainer .mcnTextContent p{color:#ffffff;font-family:Helvetica;font-size:11px;line-height:125%;text-align:left;}.preheaderContainer .mcnTextContent a{color:#ffffff;font-weight:normal;text-decoration:underline;}#templateHeader{background-color:#FFFFFF;border-top:0;border-bottom:0;}.headerContainer .mcnTextContent,.headerContainer .mcnTextContent p{color:#606060;font-family:Helvetica;font-size:15px;line-height:150%;text-align:left;}.headerContainer .mcnTextContent a{color:#6DC6DD;font-weight:normal;text-decoration:underline;}#templateBody{background-color:#FFFFFF;border-top:0;border-bottom:0;}.bodyContainer .mcnTextContent,.bodyContainer .mcnTextContent p{color:#606060;font-family:Helvetica;font-size:15px;line-height:150%;text-align:left;}.bodyContainer .mcnTextContent a{color:#6DC6DD;font-weight:normal;text-decoration:underline;}#templateFooter{background-color:#F2F2F2;border-top:0;border-bottom:0;}.footerContainer .mcnTextContent,.footerContainer .mcnTextContent p{color:#606060;font-family:Helvetica;font-size:11px;line-height:125%;text-align:left;}.footerContainer .mcnTextContent a{color:#606060;font-weight:normal;text-decoration:underline;}@media only screen and (max-width: 480px){body,table,td,p,a,li,blockquote{-webkit-text-size-adjust:none !important;}}@media only screen and (max-width: 480px){body{width:100% !important;min-width:100% !important;}}@media only screen and (max-width: 480px){table[class=mcnTextContentContainer]{width:100% !important;}}@media only screen and (max-width: 480px){.mcnBoxedTextContentContainer{max-width:100% !important;min-width:100% !important;width:100% !important;}}@media only screen and (max-width: 480px){table[class=mcpreview-image-uploader]{width:100% !important;display:none !important;}}@media only screen and (max-width: 480px){img[class=mcnImage]{width:100% !important;}}@media only screen and (max-width: 480px){table[class=mcnImageGroupContentContainer]{width:100% !important;}}@media only screen and (max-width: 480px){td[class=mcnImageGroupContent]{padding:9px !important;}}@media only screen and (max-width: 480px){td[class=mcnImageGroupBlockInner]{padding-bottom:0 !important;padding-top:0 !important;}}@media only screen and (max-width: 480px){tbody[class=mcnImageGroupBlockOuter]{padding-bottom:9px !important;padding-top:9px !important;}}@media only screen and (max-width: 480px){table[class=mcnCaptionTopContent],table[class=mcnCaptionBottomContent]{width:100% !important;}}@media only screen and (max-width: 480px){table[class=mcnCaptionLeftTextContentContainer],table[class=mcnCaptionRightTextContentContainer],table[class=mcnCaptionLeftImageContentContainer],table[class=mcnCaptionRightImageContentContainer],table[class=mcnImageCardLeftTextContentContainer],table[class=mcnImageCardRightTextContentContainer]{width:100% !important;}}@media only screen and (max-width: 480px){td[class=mcnImageCardLeftImageContent],td[class=mcnImageCardRightImageContent]{padding-right:18px !important;padding-left:18px !important;padding-bottom:0 !important;}}@media only screen and (max-width: 480px){td[class=mcnImageCardBottomImageContent]{padding-bottom:9px !important;}}@media only screen and (max-width: 480px){td[class=mcnImageCardTopImageContent]{padding-top:18px !important;}}@media only screen and (max-width: 480px){td[class=mcnImageCardLeftImageContent],td[class=mcnImageCardRightImageContent]{padding-right:18px !important;padding-left:18px !important;padding-bottom:0 !important;}}@media only screen and (max-width: 480px){td[class=mcnImageCardBottomImageContent]{padding-bottom:9px !important;}}@media only screen and (max-width: 480px){td[class=mcnImageCardTopImageContent]{padding-top:18px !important;}}@media only screen and (max-width: 480px){table[class=mcnCaptionLeftContentOuter] td[class=mcnTextContent],table[class=mcnCaptionRightContentOuter] td[class=mcnTextContent]{padding-top:9px !important;}}@media only screen and (max-width: 480px){td[class=mcnCaptionBlockInner] table[class=mcnCaptionTopContent]:last-child td[class=mcnTextContent]{padding-top:18px !important;}}@media only screen and (max-width: 480px){td[class=mcnBoxedTextContentColumn]{padding-left:18px !important;padding-right:18px !important;}}@media only screen and (max-width: 480px){td[class=mcnTextContent]{padding-right:18px !important;padding-left:18px !important;}}@media only screen and (max-width: 480px){table[class=templateContainer]{max-width:600px !important;width:100% !important;}}@media only screen and (max-width: 480px){h1{font-size:24px !important;line-height:125% !important;}}@media only screen and (max-width: 480px){h2{font-size:20px !important;line-height:125% !important;}}@media only screen and (max-width: 480px){h3{font-size:18px !important;line-height:125% !important;}}@media only screen and (max-width: 480px){h4{font-size:16px !important;line-height:125% !important;}}@media only screen and (max-width: 480px){table[class=mcnBoxedTextContentContainer] td[class=mcnTextContent],td[class=mcnBoxedTextContentContainer] td[class=mcnTextContent] p{font-size:18px !important;line-height:125% !important;}}@media only screen and (max-width: 480px){table[id=templatePreheader]{display:block !important;}}@media only screen and (max-width: 480px){td[class=preheaderContainer] td[class=mcnTextContent],td[class=preheaderContainer] td[class=mcnTextContent] p{font-size:14px !important;line-height:115% !important;}}@media only screen and (max-width: 480px){td[class=headerContainer] td[class=mcnTextContent],td[class=headerContainer] td[class=mcnTextContent] p{font-size:18px !important;line-height:125% !important;}}@media only screen and (max-width: 480px){td[class=bodyContainer] td[class=mcnTextContent],td[class=bodyContainer] td[class=mcnTextContent] p{font-size:18px !important;line-height:125% !important;}}@media only screen and (max-width: 480px){td[class=footerContainer] td[class=mcnTextContent],td[class=footerContainer] td[class=mcnTextContent] p{font-size:14px !important;line-height:115% !important;}}@media only screen and (max-width: 480px){td[class=footerContainer] a[class=utilityLink]{display:block !important;}}
+  </style>
+  <script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");            document.write(unescape("%3Cscript src=\'" + gaJsHost + "google-analytics.com/ga.js\' type=\'text/javascript\'%3E%3C/script%3E"));
+  </script>
+  <script src="http://www.google-analytics.com/ga.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   try {                var _gaq = _gaq || [];                _gaq.push(["_setAccount", "UA-1990784-2"]);                _gaq.push(["_setDomainName", ".campaign-archive.com"]);                _gaq.push(["_trackPageview"]);                _gaq.push(["_setAllowLinker", true]);            } catch(err) {console.log(err);}
+  </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+  </script>
+  <link href="http://us4.campaign-archive2.com/css/archivebar-desktop.css" mc:nocompile="" rel="stylesheet"/>
+  <script mc:nocompile="" src="http://us4.campaign-archive2.com/js/archivebar-desktop-plugins.js" type="text/javascript">
+  </script>
+  <script mc:nocompile="" src="http://downloads.mailchimp.com/ZeroClipboard.min.js">
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function() {                ZeroClipboard.setDefaults({ moviePath: "//downloads.mailchimp.com/ZeroClipboard.07.13.swf", trustedDomains: [\'us4.campaign-archive2.com\']});                var clip = new ZeroClipboard( $(\'#copyURL\') );                clip.setHandCursor(true);                clip.on(\'complete\', function(client, args) {alert(\'Copied "\'+args.text+\'" to your clipboard.\');});                clip.on(\'mouseover\', function (client) { $(\'#copyURL\').addClass(\'hover\'); });                clip.on(\'mouseout\', function (client) { $(\'#copyURL\').removeClass(\'hover\'); });                $(\'li.more > a\').click(function(){                    var toToggle = $($(this).attr(\'href\'));                    if(toToggle.is(\':visible\')){                        toToggle.slideUp(\'fast\');                        $(this).removeClass(\'is-active\');                        if ($(\'#awesomebar\').find(\'.is-active\').length < 1){                            $(\'#awesomebar\').removeClass(\'sub-active\');                        }                    } else {                        toToggle.slideDown(\'fast\');                        $(this).addClass(\'is-active\');                        $(\'#awesomebar\').addClass(\'sub-active\');                    }                    return false;                });            });
+  </script>
+  <script src="http://us4.campaign-archive2.com/js/mailchimp/fancyzoom.mc.js">
+  </script>
+  <script type="text/javascript">
+   function incrementFacebookLikeCount() {        var current = parseInt($(\'#campaign-fb-like-btn span\').html());        $(\'#campaign-fb-like-btn span\').fadeOut().html(++current).fadeIn();    }    function getUrlParams(str) {        var vars = {}, hash;        if (!str) return vars;        var hashes = str.slice(str.indexOf(\'?\') + 1).split(\'&\');        for(var i = 0; i < hashes.length; i++) {            hash = hashes[i].split(\'=\');            vars[hash[0]] = hash[1];        }        return vars;    }        function setupSocialSharingStuffs() {        var numSocialElems = $(\'a[rel=socialproxy]\').length;        var numSocialInitialized = 0;        var urlParams = getUrlParams(window.document.location.href);        var paramsToCopy = {\'e\':true, \'eo\':true};        $(\'a[rel=socialproxy]\').each(function() {            var href = $(this).attr(\'href\');            var newHref = decodeURIComponent(href.match(/socialproxy=(.*)/)[1]);            // for facebook insanity to work well, it needs to all be run against just campaign-archive            newHref = newHref.replace(/campaign-archive(\\d)/gi, \'campaign-archive\');            var newHrefParams = getUrlParams(newHref);            for(var param in urlParams) {                if ((param in paramsToCopy) && !(param in newHrefParams)) {                    newHref += \'&\' + param + \'=\' + urlParams[param];                }            }            $(this).attr(\'href\', newHref);            if (href.indexOf(\'facebook-comment\') !== -1) {                $(this).fancyZoom({"zoom_id": "social-proxy", "width":620, "height":450, "iframe_height": 450});            } else {                $(this).fancyZoom({"zoom_id": "social-proxy", "width":500, "height":200, "iframe_height": 500});            }            numSocialInitialized++;                    });    }if (window.top!=window.self){        $(function() {          var iframeOffset = $("#archive", window.parent.document).offset();          $("a").each(function () {              var link = $(this);              var href = link.attr("href");              if (href && href[0] == "#") {                  var name = href.substring(1);                  $(this).click(function () {                      var nameElement = $("[name=\'" + name + "\']");                      var idElement = $("#" + name);                      var element = null;                      if (nameElement.length > 0) {                          element = nameElement;                      } else if (idElement.length > 0) {                          element = idElement;                      }                               if (element) {                          var offset = element.offset();                          var height = element.height();                          //3 is totally arbitrary, but seems to work best.                          window.parent.scrollTo(offset.left, (offset.top + iframeOffset.top - (height*3)) );                      }                               return false;                  });              }          });        });    }
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function() {                setupSocialSharingStuffs();            });
+  </script>
+  <div id="awesomewrap">
+   <div id="awesomeshare">
+    <div id="zclipwrap">
+     <label for="shortURL">
+      Short URL
+     </label>
+     <span data-clipboard-target="shortURL" id="copyURL">
+      <input class="av-text" id="shortURL" name="shorturl" style="margin-top:6px;" type="text" value="http://eepurl.com/b2uofX"/>
+      <span>
+       Copy
+      </span>
+     </span>
+     <div id="zero_clipboard">
+     </div>
+    </div>
+    <ul id="awesomesocial">
+     <li class="fbk">
+      <a class="fbk-like" href="/?socialproxy=http%3A%2F%2Fus4.campaign-archive2.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26url%3Dhttp%253A%252F%252Fus4.campaign-archive2.com%252F%253Fu%253D9735795484d2e4c204da82a29%2526id%253D80859d91a4%26title%3DPycoders%2520Weekly%2520%2528Issue%2520%2523217%2529%253A%2520%2520I%252FO" id="campaign-fb-like-btn" rel="socialproxy" title="Like Pycoders Weekly (Issue #217):  I/O on Facebook">
+       Facebook
+       <b>
+        0
+        <i>
+         likes
+        </i>
+       </b>
+      </a>
+     </li>
+     <li class="twt">
+      <a href="http://twitter.com/share?url=http%3A%2F%2Feepurl.com%2Fb2uofX" target="_blank" title="Share on Twitter">
+       Twitter
+       <b>
+        0
+        <i>
+         tweets
+        </i>
+       </b>
+      </a>
+     </li>
+     <li class="ggl">
+      <a class="twitter-share-button" href="http://us4.campaign-archive1.com/?u=9735795484d2e4c204da82a29&amp;id=80859d91a4&amp;socialproxy=http%3A%2F%2Fus4.campaign-archive1.com%2Fsocial-proxy%2Fgoogle-plus-one%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26url%3Dhttp%253A%252F%252Fus4.campaign-archive2.com%252F%253Fu%253D9735795484d2e4c204da82a29%2526id%253D80859d91a4%26title%3DPycoders%2520Weekly%2520%2528Issue%2520%2523217%2529%253A%2520%2520I%252FO" id="campaign-gpo-btn" rel="socialproxy" title="+1 on Google Plus">
+       Google +1
+      </a>
+     </li>
+    </ul>
+   </div>
+   <ul id="awesomebar">
+    <li>
+     <a href="http://eepurl.com/iDqTX" target="_blank" title="Subscribe to List">
+      Subscribe
+     </a>
+    </li>
+    <li class="more" id="toggleshare">
+     <a href="#awesomeshare">
+      Share
+     </a>
+    </li>
+    <li>
+     <a href="http://us4.campaign-archive2.com/home/?u=9735795484d2e4c204da82a29&amp;id=64134e0a27" target="_blank" title="View Past Issues">
+      Past Issues
+     </a>
+    </li>
+    <li class="float-r">
+     <a class="rss" href="http://us4.campaign-archive2.com/feed?u=9735795484d2e4c204da82a29&amp;id=64134e0a27" target="_blank" title="subscribe to the email archive feed">
+      RSS
+     </a>
+    </li>
+    <li class="float-r more">
+     <a href="#translate">
+      Translate
+     </a>
+     <ul id="translate">
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|en&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="English">
+        English
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ar&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="???????">
+        ???????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|af&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Afrikaans">
+        Afrikaans
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|be&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="?????????? ????">
+        ?????????? ????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|bg&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="?????????">
+        ?????????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ca&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="catal\xe0">
+        catal\xe0
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|zh-CN&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="??????">
+        ??????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|zh-TW&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="??????">
+        ??????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|hr&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Hrvatski">
+        Hrvatski
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|cs&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="?esky">
+        ?esky
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|da&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Dansk">
+        Dansk
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|et&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="eesti keel">
+        eesti keel
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|nl&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Nederlands">
+        Nederlands
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|fi&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Suomi">
+        Suomi
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|fr&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Fran\xe7ais">
+        Fran\xe7ais
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|de&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Deutsch">
+        Deutsch
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|el&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="????????">
+        ????????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|hi&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="??????">
+        ??????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|hu&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Magyar">
+        Magyar
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ga&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Gaeilge">
+        Gaeilge
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|id&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Indonesia">
+        Indonesia
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|is&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="\xedslenska">
+        \xedslenska
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|it&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Italiano">
+        Italiano
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ja&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="???">
+        ???
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|km&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="?????????">
+        ?????????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ko&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="???">
+        ???
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|mk&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="?????????? ?????">
+        ?????????? ?????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ms&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="???? ?????">
+        ???? ?????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|mt&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Malti">
+        Malti
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|no&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Norsk">
+        Norsk
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|pl&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Polski">
+        Polski
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|pt&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Portugu\xeas">
+        Portugu\xeas
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|pt-PT&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Portugu\xeas - Portugal">
+        Portugu\xeas - Portugal
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ro&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Rom\xe2n?">
+        Rom\xe2n?
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ru&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="???????">
+        ???????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|es&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Espa\xf1ol">
+        Espa\xf1ol
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|sw&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Kiswahili">
+        Kiswahili
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|sv&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Svenska">
+        Svenska
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|iw&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="?????">
+        ?????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|lt&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Lietuvi?">
+        Lietuvi?
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|lv&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="latvie?u">
+        latvie?u
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|sk&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="sloven?ina">
+        sloven?ina
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|sl&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="sloven??ina">
+        sloven??ina
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|sr&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="??????">
+        ??????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ta&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="?????">
+        ?????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|th&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="???????">
+        ???????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|tr&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="T\xfcrk\xe7e">
+        T\xfcrk\xe7e
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|tl&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Filipino">
+        Filipino
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|uk&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="???????????">
+        ???????????
+       </a>
+      </li>
+      <li>
+       <a href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|vi&amp;u=http%3A%2F%2Fus4.campaign-archive2.com%2F%3Fu%3D9735795484d2e4c204da82a29%26id%3D80859d91a4%26e%3De69c6f9608" rel="nofollow" title="Ti?ng Vi?t">
+        Ti?ng Vi?t
+       </a>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div itemscope="" itemtype="http://schema.org/EmailMessage">
+   <div itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <meta content="Pycoder\'s Weekly" itemprop="name"/>
+    <link content="http://www.pycoders.com" itemprop="url"/>
+   </div>
+   <div itemprop="about" itemscope="" itemtype="http://schema.org/Offer">
+    <link href="https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png" itemprop="image"/>
+   </div>
+  </div>
+  <center>
+   <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" id="bodyTable" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 0;background-color: #F2F2F2;height: 100% !important;width: 100% !important;" width="100%">
+    <tbody>
+     <tr>
+      <td align="center" id="bodyCell" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 0;border-top: 0;height: 100% !important;width: 100% !important;" valign="top">
+       <!-- BEGIN TEMPLATE // -->
+       <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+           <!-- BEGIN PREHEADER // -->
+           <table border="0" cellpadding="0" cellspacing="0" id="templatePreheader" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #3399cc;border-top: 0;border-bottom: 0;" width="100%">
+            <tbody>
+             <tr>
+              <td align="center" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+               <table border="0" cellpadding="0" cellspacing="0" class="templateContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="600">
+                <tbody>
+                 <tr>
+                  <td class="preheaderContainer" style="padding-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                   <table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                    <tbody class="mcnTextBlockOuter">
+                     <tr>
+                      <td class="mcnTextBlockInner" style="padding-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                       <!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;"><tr><![endif]-->
+                       <!--[if mso]><td valign="top" width="390" style="width:390px;"><![endif]-->
+                       <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width: 390px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                        <tbody>
+                         <tr>
+                          <td class="mcnTextContent" style='padding: 0px 18px 9px;color: #FFFFFF;font-family: Arial, "helvetica neue": ;, helvetica, sans-serif: ;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-size: 11px;line-height: 125%;text-align: left;' valign="top">
+                           New Twisted, Python, Pyramid and pytest-mock releases, bless and much more.
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                       <!--[if mso]></td><![endif]-->
+                       <!--[if mso]><td valign="top" width="210" style="width:210px;"><![endif]-->
+                       <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width: 210px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                        <tbody>
+                         <tr>
+                          <td class="mcnTextContent" style='padding: 0px 18px 9px;color: #FFFFFF;font-family: Arial, "helvetica neue": ;, helvetica, sans-serif: ;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-size: 11px;line-height: 125%;text-align: left;' valign="top">
+                           <a href="http://us4.campaign-archive1.com/?u=9735795484d2e4c204da82a29&amp;id=80859d91a4&amp;e=e69c6f9608" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #ffffff;font-weight: normal;text-decoration: underline;" target="_blank">
+                            View this email in your browser
+                           </a>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                       <!--[if mso]></td><![endif]-->
+                       <!--[if mso]></tr></table><![endif]-->
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <!-- // END PREHEADER -->
+          </td>
+         </tr>
+         <tr>
+          <td align="center" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+           <!-- BEGIN HEADER // -->
+           <table border="0" cellpadding="0" cellspacing="0" id="templateHeader" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;border-top: 0;border-bottom: 0;" width="100%">
+            <tbody>
+             <tr>
+              <td align="center" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+               <table border="0" cellpadding="0" cellspacing="0" class="templateContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="600">
+                <tbody>
+                 <tr>
+                  <td class="headerContainer" style="padding-top: 10px;padding-bottom: 10px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                   <table border="0" cellpadding="0" cellspacing="0" class="mcnImageBlock" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                    <tbody class="mcnImageBlockOuter">
+                     <tr>
+                      <td class="mcnImageBlockInner" style="padding: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                       <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                        <tbody>
+                         <tr>
+                          <td class="mcnImageContent" style="padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                           <img align="left" alt="" class="mcnImage" src="https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png" style="max-width: 860px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" width="564"/>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <!-- // END HEADER -->
+          </td>
+         </tr>
+         <tr>
+          <td align="center" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+           <!-- BEGIN BODY // -->
+           <table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;border-top: 0;border-bottom: 0;" width="100%">
+            <tbody>
+             <tr>
+              <td align="center" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+               <table border="0" cellpadding="0" cellspacing="0" class="templateContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="600">
+                <tbody>
+                 <tr>
+                  <td class="bodyContainer" style="padding-top: 10px;padding-bottom: 10px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                   <table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                    <tbody class="mcnTextBlockOuter">
+                     <tr>
+                      <td class="mcnTextBlockInner" style="padding-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                       <!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;"><tr><![endif]-->
+                       <!--[if mso]><td valign="top" width="600" style="width:600px;"><![endif]-->
+                       <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                        <tbody>
+                         <tr>
+                          <td class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;" valign="top">
+                           <h1 style="margin: 0;padding: 0;display: block;font-family: Helvetica;font-size: 40px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: -1px;text-align: left;color: #606060 !important;">
+                            Issue #217: I/O
+                           </h1>
+                           <span style="font-size:18px">
+                            <span style="font-family:georgia,times,times new roman,serif">
+                             Weekly dose of all things Python.
+                            </span>
+                           </span>
+                           <br/>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                       <!--[if mso]></td><![endif]-->
+                       <!--[if mso]></tr></table><![endif]-->
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                    <tbody class="mcnTextBlockOuter">
+                     <tr>
+                      <td class="mcnTextBlockInner" style="padding-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                       <!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;"><tr><![endif]-->
+                       <!--[if mso]><td valign="top" width="600" style="width:600px;"><![endif]-->
+                       <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                        <tbody>
+                         <tr>
+                          <td class="mcnTextContent" style='padding: 0px 18px 9px;font-family: Georgia, Times, "times new roman": ;, serif: ;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-size: 15px;line-height: 150%;text-align: left;' valign="top">
+                           Hi Everyone!
+                           <br/>
+                           <br/>
+                           This is the biggest issue we have put together in quite awhile, thanks for your submissions! Enjoy!
+                           <br/>
+                           <br/>
+                           Share an
+                           <a href="http://pycoders.com/submissions/" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;" target="_self">
+                            article
+                           </a>
+                           with us and if it lands in newsletter get highlighted as a contributor in the newsletter!
+                           <br/>
+                           <br/>
+                           Like what we are doing? Have any comments or suggestions? Check us out on
+                           <a href="http://www.twitter.com/pycoders" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;" target="_blank">
+                            twitter
+                           </a>
+                           !
+                           <br/>
+                           <br/>
+                           --
+                           <br/>
+                           Mahdi &amp; Mike
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                       <!--[if mso]></td><![endif]-->
+                       <!--[if mso]></tr></table><![endif]-->
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <table border="0" cellpadding="0" cellspacing="0" class="mcnDividerBlock" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                    <tbody class="mcnDividerBlockOuter">
+                     <tr>
+                      <td class="mcnDividerBlockInner" style="padding: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                       <table border="0" cellpadding="0" cellspacing="0" class="mcnDividerContent" style="border-top-width: 1px;border-top-style: solid;border-top-color: #999999;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                        <tbody>
+                         <tr>
+                          <td style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                           <span>
+                           </span>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                    <tbody class="mcnTextBlockOuter">
+                     <tr>
+                      <td class="mcnTextBlockInner" style="padding-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                       <!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;"><tr><![endif]-->
+                       <!--[if mso]><td valign="top" width="600" style="width:600px;"><![endif]-->
+                       <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                        <tbody>
+                         <tr>
+                          <td class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;" valign="top">
+                           <table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                            <tbody class="mcnTextBlockOuter">
+                             <tr>
+                              <td class="mcnTextBlockInner" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                               <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="600">
+                                <tbody>
+                                 <tr>
+                                  <td class="mcnTextContent" style="padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;" valign="top">
+                                   <h2 class="null" style="margin: 0;padding: 0;display: block;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: -.75px;text-align: left;color: #404040 !important;">
+                                    <span style="font-size:20px">
+                                     <strong>
+                                      <span style="font-weight:normal; line-height:20.8px">
+                                       <font color="#333333" face="Arial, Verdana, sans-serif">
+                                        From our sponsors:
+                                       </font>
+                                      </span>
+                                     </strong>
+                                    </span>
+                                   </h2>
+                                   <table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody>
+                                     <tr>
+                                      <td style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="130">
+                                       <a href="https://hired.com/?utm_source=newsletters&amp;utm_medium=pycodersweekly&amp;utm_campaign=q2-16&amp;utm_term=cat-tech-python" style="font-size: 13px;line-height: 20.8px;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;" target="_blank">
+                                        <font color="#333333" face="Arial, Verdana, sans-serif">
+                                         <img align="none" alt="Opbeat" height="125" src="https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/1554e523-854f-438a-a9a3-a76970500c09.png" style="width: 125px;height: 125px;margin: 0px;border: 0;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" width="125"/>
+                                        </font>
+                                       </a>
+                                      </td>
+                                      <td style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                       <p class="p1" style="margin: 1em 0;padding: 0;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;">
+                                        <strong>
+                                         The Easiest Way to Find a Job
+                                        </strong>
+                                        <br/>
+                                        <br/>
+                                        <a href="https://hired.com/?utm_source=newsletters&amp;utm_medium=pycodersweekly&amp;utm_campaign=q2-16&amp;utm_term=cat-tech-python" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;" target="_blank">
+                                         Hired
+                                        </a>
+                                        lets you sit back while job offers come to you. When you complete your profile, instantly apply to 4,000+ companies on the platform who will contact with you with job offers, including salary and equity up-front.
+                                        <a href="https://hired.com/?utm_source=newsletters&amp;utm_medium=pycodersweekly&amp;utm_campaign=q2-16&amp;utm_term=cat-tech-python" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;" target="_blank">
+                                         Try it today.
+                                        </a>
+                                       </p>
+                                       <font color="#333333" face="Arial, Verdana, sans-serif">
+                                        <span style="font-size:13px; line-height:20.8px">
+                                         (
+                                         <a href="mailto:admin@pycoders.com?subject=Pycoders%20Weekly%20Sponsorship%20Inquiry" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;" target="_blank" title="Sponsor this newsletter">
+                                          Sponsor this newsletter
+                                         </a>
+                                         )
+                                        </span>
+                                       </font>
+                                      </td>
+                                     </tr>
+                                    </tbody>
+                                   </table>
+                                  </td>
+                                 </tr>
+                                </tbody>
+                               </table>
+                              </td>
+                             </tr>
+                            </tbody>
+                           </table>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                       <!--[if mso]></td><![endif]-->
+                       <!--[if mso]></tr></table><![endif]-->
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <table border="0" cellpadding="0" cellspacing="0" class="mcnDividerBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                    <tbody class="mcnDividerBlockOuter">
+                     <tr>
+                      <td class="mcnDividerBlockInner" style="min-width: 100%;padding: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                       <table border="0" cellpadding="0" cellspacing="0" class="mcnDividerContent" style="min-width: 100%;border-top-width: 1px;border-top-style: solid;border-top-color: #999999;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                        <tbody>
+                         <tr>
+                          <td style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                           <span>
+                           </span>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                       <!--                            <td class="mcnDividerBlockInner" style="padding: 18px;">                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />-->
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                    <tbody class="mcnTextBlockOuter">
+                     <tr>
+                      <td class="mcnTextBlockInner" style="padding-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                       <!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;"><tr><![endif]-->
+                       <!--[if mso]><td valign="top" width="600" style="width:600px;"><![endif]-->
+                       <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                        <tbody>
+                         <tr>
+                          <td class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;" valign="top">
+                           <h2 style="margin: 0;padding: 0;display: block;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: -.75px;text-align: left;color: #404040 !important;">
+                            News
+                           </h2>
+                           <br/>
+                           <a href="https://groups.google.com/forum/#!msg/pylons-discuss/_DRPHE_pBb4/hqLUJKaYBQAJ" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Pyramid 1.7 released
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            The latest version of Pyramid is out! Check out whats new over
+                            <a href="http://docs.pylonsproject.org/projects/pyramid/en/1.7-branch/whatsnew-1.7.html" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;">
+                             here
+                            </a>
+                            .
+                           </span>
+                           <br/>
+                           <a href="https://groups.google.com/forum/#!msg/pylons-discuss/_DRPHE_pBb4/hqLUJKaYBQAJ" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            google.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/trypyramid" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @trypyramid
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="http://pyfound.blogspot.ca/2016/05/brett-cannon-wins-frank-willison-award.html" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Brett Cannon wins Frank Willison Memorial Award
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            At OSCON Brett Cannon was given the Frank Willison Memorial Award to recognize Cannon\'s contributions to CPython as a core developer and project manager for over a decade. Congratulations Brett!
+                           </span>
+                           <br/>
+                           <a href="http://pyfound.blogspot.ca/2016/05/brett-cannon-wins-frank-willison-award.html" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            blogspot.ca
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="http://labs.twistedmatrix.com/2016/05/twisted-162-released.html" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Twisted 16.2 Released
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            The latest version of twisted is out, click through to see an overview of what has changed!
+                           </span>
+                           <br/>
+                           <a href="http://labs.twistedmatrix.com/2016/05/twisted-162-released.html" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            twistedmatrix.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://www.python.org/downloads/release/python-360a1/" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Python 3.6.0a1 released
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Python 3.6.0 Alpha 1 is out, download it, check it out, report any issues!
+                           </span>
+                           <br/>
+                           <a href="https://www.python.org/downloads/release/python-360a1/" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            python.org
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://pypi.python.org/pypi/pytest-mock" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             pytest-mock 1.0 has been released!
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            More details after the jump!
+                           </span>
+                           <br/>
+                           <a href="https://pypi.python.org/pypi/pytest-mock" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            python.org
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/myusuf3" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @myusuf3
+                           </a>
+                           <br/>
+                           <br/>
+                           <h2 style="margin: 0;padding: 0;display: block;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: -.75px;text-align: left;color: #404040 !important;">
+                            Discussion
+                           </h2>
+                           <br/>
+                           <a href="https://www.reddit.com/r/Python/comments/4k2aww/do_any_of_you_have_projects_with_numpy_scipy_or/" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Show off your Numpy, Scipy or pandas projects. Looking for ideas.
+                            </span>
+                           </a>
+                           <br/>
+                           <a href="https://www.reddit.com/r/Python/comments/4k2aww/do_any_of_you_have_projects_with_numpy_scipy_or/" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            reddit.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://www.reddit.com/r/Python/comments/4js3n4/import_c_files_directly_from_python/" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Import C++ files directly from Python!
+                            </span>
+                           </a>
+                           <br/>
+                           <a href="https://www.reddit.com/r/Python/comments/4js3n4/import_c_files_directly_from_python/" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            reddit.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/myusuf3" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @myusuf3
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://www.reddit.com/r/Python/comments/4jp1hm/a_python_ate_my_gui_thoughts_on_the_future_of/" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             A Python Ate My GUI ? Thoughts on the future of Python and graphical interface
+                            </span>
+                           </a>
+                           <br/>
+                           <a href="https://www.reddit.com/r/Python/comments/4jp1hm/a_python_ate_my_gui_thoughts_on_the_future_of/" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            reddit.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://www.reddit.com/r/Python/comments/4jg8td/in_your_opinion_what_is_the_crucial_5_everyone/" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             In your opinion, what is the crucial 5% (everyone should know) when it comes to Python unit testing that cover 95% of the testing out there?
+                            </span>
+                           </a>
+                           <br/>
+                           <a href="https://www.reddit.com/r/Python/comments/4jg8td/in_your_opinion_what_is_the_crucial_5_everyone/" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            reddit.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/myusuf3" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @myusuf3
+                           </a>
+                           <br/>
+                           <br/>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                       <!--[if mso]></td><![endif]-->
+                       <!--[if mso]></tr></table><![endif]-->
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                    <tbody class="mcnTextBlockOuter">
+                     <tr>
+                      <td class="mcnTextBlockInner" style="padding-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                       <!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;"><tr><![endif]-->
+                       <!--[if mso]><td valign="top" width="600" style="width:600px;"><![endif]-->
+                       <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                        <tbody>
+                         <tr>
+                          <td class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;" valign="top">
+                           <h2 class="null" style="margin: 0;padding: 0;display: block;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: -.75px;text-align: left;color: #404040 !important;">
+                            Python Jobs
+                           </h2>
+                           <br/>
+                           <a href="http://www.pythonjobshq.com/jobs/326815-software-engineer-python-at-pole-star-space-applications-ltd" style="font-family: Helvetica;font-size: 15px;line-height: 22.5px;color: #AAAAAA;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-weight: normal;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2; word-wrap:break-word">
+                             Software Engineer - Python  (Shepards Bush, London, UK)
+                            </span>
+                            <font color="#aaaaaa" face="Helvetica" style="word-wrap: break-word;">
+                            </font>
+                           </a>
+                           <br/>
+                           <span style="color:#606060; font-family:helvetica; font-size:15px; line-height:22.5px">
+                            Posted By
+                           </span>
+                           <a href="http://web.polestarglobal.com/" style="font-family: Helvetica;font-size: 15px;line-height: 22.5px;font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            Pole Star Space Applications Ltd.
+                           </a>
+                           <span style="color:#606060; font-family:helvetica; font-size:15px; line-height:22.5px">
+                           </span>
+                           <a style="font-family: Helvetica;word-wrap: break-word;color: #3399CC;text-decoration: underline;line-height: 20.8px;vertical-align: middle;border-radius: 3px;font-size: 10px;text-transform: uppercase;padding: 1px 5px;display: inline-block;background: #EEEEEE;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-weight: normal;">
+                            PROMOTED
+                           </a>
+                           <br/>
+                           <br/>
+                           <a href="http://www.pythonjobshq.com/employers/58-catalpa-international" style="font-family: Helvetica;font-size: 15px;line-height: 22.5px;color: #AAAAAA;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-weight: normal;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2; word-wrap:break-word">
+                             UI &amp; UX Designer (East Timor/Anywhere)
+                            </span>
+                            <font color="#aaaaaa" face="Helvetica" style="word-wrap: break-word;">
+                            </font>
+                           </a>
+                           <br/>
+                           <span style="color:#606060; font-family:helvetica; font-size:15px; line-height:22.5px">
+                            Posted By
+                           </span>
+                           <a href="http://www.catalpa.io/" style="font-family: Helvetica;font-size: 15px;line-height: 22.5px;font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            Catalpa International.
+                           </a>
+                           <span style="color:#606060; font-family:helvetica; font-size:15px; line-height:22.5px">
+                           </span>
+                           <a style="font-family: Helvetica;word-wrap: break-word;color: #3399CC;text-decoration: underline;line-height: 20.8px;vertical-align: middle;border-radius: 3px;font-size: 10px;text-transform: uppercase;padding: 1px 5px;display: inline-block;background: #EEEEEE;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-weight: normal;">
+                            PROMOTED
+                           </a>
+                           <br/>
+                           <br/>
+                           <a href="http://www.pythonjobshq.com/jobs/280463-support-engineer-at-zapier" style="font-family: Helvetica;font-size: 15px;line-height: 22.5px;color: #AAAAAA;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-weight: normal;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2; word-wrap:break-word">
+                             Support Engineer (Remote)
+                            </span>
+                            <font color="#aaaaaa" face="Helvetica" style="word-wrap: break-word;">
+                            </font>
+                           </a>
+                           <br/>
+                           <span style="color:#606060; font-family:helvetica; font-size:15px; line-height:22.5px">
+                            Posted By
+                           </span>
+                           <a href="https://zapier.com/about/" style="font-family: Helvetica;font-size: 15px;line-height: 22.5px;font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            Zapier.
+                           </a>
+                           <span style="color:#606060; font-family:helvetica; font-size:15px; line-height:22.5px">
+                           </span>
+                           <a style="font-family: Helvetica;word-wrap: break-word;color: #3399CC;text-decoration: underline;line-height: 20.8px;vertical-align: middle;border-radius: 3px;font-size: 10px;text-transform: uppercase;padding: 1px 5px;display: inline-block;background: #EEEEEE;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-weight: normal;">
+                            PROMOTED
+                           </a>
+                           <br/>
+                           <br/>
+                           <a href="http://www.pythonjobshq.com/jobs/260903-software-engineer-at-analyte-health-inc" style="font-family: Helvetica;font-size: 15px;line-height: 22.5px;color: #AAAAAA;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-weight: normal;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Software Engineer (Chicago, IL)
+                            </span>
+                           </a>
+                           <br style="color: #606060;font-family: Helvetica;font-size: 15px;line-height: 22.5px;"/>
+                           <span style="color:#606060; font-family:helvetica; font-size:15px; line-height:22.5px">
+                            Posted By
+                           </span>
+                           <a href="http://www.analytehealth.com/" style="font-family: Helvetica;font-size: 15px;line-height: 22.5px;font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            Analyte Health, Inc.
+                           </a>
+                           <span style="color:#606060; font-family:helvetica; font-size:15px; line-height:22.5px">
+                           </span>
+                           <a style="font-family: Helvetica;word-wrap: break-word;color: #3399CC;text-decoration: underline;line-height: 20.8px;vertical-align: middle;border-radius: 3px;font-size: 10px;text-transform: uppercase;padding: 1px 5px;display: inline-block;background: #EEEEEE;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-weight: normal;">
+                            PROMOTED
+                           </a>
+                           <br/>
+                           <br/>
+                           <a href="http://www.pythonjobshq.com/jobs/275345-application-reliability-engineer-at-zapier" style="font-family: Helvetica;font-size: 15px;line-height: 22.5px;color: #AAAAAA;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-weight: normal;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Appication Reliablity Engineer (Remote)
+                            </span>
+                           </a>
+                           <br style="color: #606060;font-family: Helvetica;font-size: 15px;line-height: 22.5px;"/>
+                           <span style="color:#606060; font-family:helvetica; font-size:15px; line-height:22.5px">
+                            Posted By
+                           </span>
+                           <a href="https://zapier.com/about/" style="font-family: Helvetica;font-size: 15px;line-height: 22.5px;font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            Zapier.
+                           </a>
+                           <span style="color:#606060; font-family:helvetica; font-size:15px; line-height:22.5px">
+                           </span>
+                           <a style="font-family: Helvetica;word-wrap: break-word;color: #3399CC;text-decoration: underline;line-height: 20.8px;vertical-align: middle;border-radius: 3px;font-size: 10px;text-transform: uppercase;padding: 1px 5px;display: inline-block;background: #EEEEEE;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-weight: normal;">
+                            PROMOTED
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="http://www.pythonjobshq.com?utm_source=newsletter&amp;utm_campaign=pcoders176&amp;utm_medium=email" style="color: #AAAAAA;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-weight: normal;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             See More Python Jobs &gt;&gt;
+                            </span>
+                            <font color="#aaaaaa">
+                            </font>
+                           </a>
+                           <table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                            <tbody class="mcnTextBlockOuter">
+                            </tbody>
+                           </table>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                       <!--[if mso]></td><![endif]-->
+                       <!--[if mso]></tr></table><![endif]-->
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <table border="0" cellpadding="0" cellspacing="0" class="mcnDividerBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                    <tbody class="mcnDividerBlockOuter">
+                     <tr>
+                      <td class="mcnDividerBlockInner" style="min-width: 100%;padding: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                       <table border="0" cellpadding="0" cellspacing="0" class="mcnDividerContent" style="min-width: 100%;border-top-width: 1px;border-top-style: solid;border-top-color: #999999;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                        <tbody>
+                         <tr>
+                          <td style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                           <span>
+                           </span>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                       <!--                            <td class="mcnDividerBlockInner" style="padding: 18px;">                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />-->
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                    <tbody class="mcnTextBlockOuter">
+                     <tr>
+                      <td class="mcnTextBlockInner" style="padding-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                       <!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;"><tr><![endif]-->
+                       <!--[if mso]><td valign="top" width="600" style="width:600px;"><![endif]-->
+                       <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                        <tbody>
+                         <tr>
+                          <td class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;" valign="top">
+                           <table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                            <tbody class="mcnTextBlockOuter">
+                             <tr>
+                              <td class="mcnTextBlockInner" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                               <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="600">
+                                <tbody>
+                                 <tr>
+                                  <td class="mcnTextContent" style="padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;" valign="top">
+                                   <h2 class="null" style="margin: 0;padding: 0;display: block;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: -.75px;text-align: left;color: #404040 !important;">
+                                    <span style="font-size:20px">
+                                     <strong>
+                                      <span style="font-weight:normal; line-height:20.8px">
+                                       <font color="#333333" face="Arial, Verdana, sans-serif">
+                                        From our sponsors:
+                                       </font>
+                                      </span>
+                                     </strong>
+                                    </span>
+                                   </h2>
+                                   <table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody>
+                                     <tr>
+                                      <td style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="130">
+                                       <a href="https://hired.com/?utm_source=newsletters&amp;utm_medium=pycodersweekly&amp;utm_campaign=q2-16&amp;utm_term=cat-tech-python" style="font-size: 13px;line-height: 20.8px;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;" target="_blank">
+                                        <font color="#333333" face="Arial, Verdana, sans-serif">
+                                         <img align="none" alt="Opbeat" height="125" src="https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/1554e523-854f-438a-a9a3-a76970500c09.png" style="width: 125px;height: 125px;margin: 0px;border: 0;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" width="125"/>
+                                        </font>
+                                       </a>
+                                      </td>
+                                      <td style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                       <p class="p1" style="margin: 1em 0;padding: 0;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;">
+                                        <strong>
+                                         The Easiest Way to Find a Job
+                                        </strong>
+                                        <br/>
+                                        <br/>
+                                        <a href="https://hired.com/?utm_source=newsletters&amp;utm_medium=pycodersweekly&amp;utm_campaign=q2-16&amp;utm_term=cat-tech-python" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;" target="_blank">
+                                         Hired
+                                        </a>
+                                        lets you sit back while job offers come to you. When you complete your profile, instantly apply to 4,000+ companies on the platform who will contact with you with job offers, including salary and equity up-front.
+                                        <a href="https://hired.com/?utm_source=newsletters&amp;utm_medium=pycodersweekly&amp;utm_campaign=q2-16&amp;utm_term=cat-tech-python" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;" target="_blank">
+                                         Try it today.
+                                        </a>
+                                       </p>
+                                       <font color="#333333" face="Arial, Verdana, sans-serif">
+                                        <span style="font-size:13px; line-height:20.8px">
+                                         (
+                                         <a href="mailto:admin@pycoders.com?subject=Pycoders%20Weekly%20Sponsorship%20Inquiry" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;" target="_blank" title="Sponsor this newsletter">
+                                          Sponsor this newsletter
+                                         </a>
+                                         )
+                                        </span>
+                                       </font>
+                                      </td>
+                                     </tr>
+                                    </tbody>
+                                   </table>
+                                  </td>
+                                 </tr>
+                                </tbody>
+                               </table>
+                              </td>
+                             </tr>
+                            </tbody>
+                           </table>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                       <!--[if mso]></td><![endif]-->
+                       <!--[if mso]></tr></table><![endif]-->
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <table border="0" cellpadding="0" cellspacing="0" class="mcnDividerBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                    <tbody class="mcnDividerBlockOuter">
+                     <tr>
+                      <td class="mcnDividerBlockInner" style="min-width: 100%;padding: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                       <table border="0" cellpadding="0" cellspacing="0" class="mcnDividerContent" style="min-width: 100%;border-top-width: 1px;border-top-style: solid;border-top-color: #999999;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                        <tbody>
+                         <tr>
+                          <td style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                           <span>
+                           </span>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                       <!--                            <td class="mcnDividerBlockInner" style="padding: 18px;">                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />-->
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                    <tbody class="mcnTextBlockOuter">
+                     <tr>
+                      <td class="mcnTextBlockInner" style="padding-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                       <!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;"><tr><![endif]-->
+                       <!--[if mso]><td valign="top" width="600" style="width:600px;"><![endif]-->
+                       <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                        <tbody>
+                         <tr>
+                          <td class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;" valign="top">
+                           <h2 style="margin: 0;padding: 0;display: block;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: -.75px;text-align: left;color: #404040 !important;">
+                            Projects
+                           </h2>
+                           <br/>
+                           <a href="https://github.com/igordejanovic/textX" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             textX
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Domain-Specific Languages in Python made easy.
+                           </span>
+                           <br/>
+                           <a href="https://github.com/igordejanovic/textX" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://github.com/joshnewlan/say_what" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             say_what
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Using speech-to-text to fully check out during con calls.
+                           </span>
+                           <br/>
+                           <a href="https://github.com/joshnewlan/say_what" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/myusuf3" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @myusuf3
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://github.com/ProfOak/ascii_py" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             ascii_py
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Make some ascii art.
+                           </span>
+                           <br/>
+                           <a href="https://github.com/ProfOak/ascii_py" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://github.com/jarun/Buku" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Buku
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Powerful command-line bookmark manager. Your mini web!
+                           </span>
+                           <br/>
+                           <a href="https://github.com/jarun/Buku" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/myusuf3" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @myusuf3
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://github.com/Pylons/pyramid_debugtoolbar/" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             pyramid_debugtoolbar
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Pyramid debug toolbar.
+                           </span>
+                           <br/>
+                           <a href="https://github.com/Pylons/pyramid_debugtoolbar/" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/trypyramid" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @trypyramid
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://github.com/ujjwalkarn/DataSciencePython" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             DataSciencePython
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Common data analysis and machine learning tasks using python
+                           </span>
+                           <br/>
+                           <a href="https://github.com/ujjwalkarn/DataSciencePython" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://github.com/tbenthompson/cppimport" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             cppimport
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Import C++ files directly from Python!
+                           </span>
+                           <br/>
+                           <a href="https://github.com/tbenthompson/cppimport" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/myusuf3" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @myusuf3
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://github.com/shawnbrown/datatest" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             datatest
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Organize data preparation tasks with automated tests
+                           </span>
+                           <br/>
+                           <a href="https://github.com/shawnbrown/datatest" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/03sjbrown" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @03sjbrown
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://github.com/agermanidis/TranscriptBot" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             TranscriptBot
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Transcribe your meetings to Slack in real time
+                           </span>
+                           <br/>
+                           <a href="https://github.com/agermanidis/TranscriptBot" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/myusuf3" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @myusuf3
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://github.com/eliangcs/http-prompt" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             http-prompt
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            HTTPie + prompt_toolkit = an interactive command-line HTTP client featuring autocomplete and syntax highlighting
+                           </span>
+                           <br/>
+                           <a href="https://github.com/eliangcs/http-prompt" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://github.com/tensorflow/models" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             models
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Models built with TensorFlow
+                           </span>
+                           <br/>
+                           <a href="https://github.com/tensorflow/models" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/myusuf3" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @myusuf3
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://github.com/citp/OpenWPM" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             OpenWPM
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            A web privacy measurement framework
+                           </span>
+                           <br/>
+                           <a href="https://github.com/citp/OpenWPM" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://github.com/bharadwaj-raju/WeatherDesk" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             WeatherDesk
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Change the wallpaper based on the weather.
+                           </span>
+                           <br/>
+                           <a href="https://github.com/bharadwaj-raju/WeatherDesk" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://github.com/Netflix/bless" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             bless
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            From Netflix, a SSH Certificate Authority that runs as a AWS Lambda function
+                           </span>
+                           <br/>
+                           <a href="https://github.com/Netflix/bless" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/myusuf3" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @myusuf3
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://github.com/aimacode/aima-python" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             aima-python
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Python implementation of algorithms from Russell And Norvig\'s "Artificial Intelligence - A Modern Approach"
+                           </span>
+                           <br/>
+                           <a href="https://github.com/aimacode/aima-python" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://github.com/bersace/libnotify-proxy" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             libnotify-proxy
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Send desktop notification over TCP.
+                           </span>
+                           <br/>
+                           <a href="https://github.com/bersace/libnotify-proxy" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/bersace" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @bersace
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://github.com/hkupty/asterix" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             asterix
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Manage python components startup quickly and efficiently
+                           </span>
+                           <br/>
+                           <a href="https://github.com/hkupty/asterix" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            github.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <h2 style="margin: 0;padding: 0;display: block;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: -.75px;text-align: left;color: #404040 !important;">
+                            Articles
+                           </h2>
+                           <br/>
+                           <a href="http://www.blog.pythonlibrary.org/2016/05/18/python-3-an-intro-to-encryption/" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Python 3: An Intro to Encryption
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Very detailed into to encryption in Python3, focusing on the PyCrypto and cryptography packages.
+                           </span>
+                           <br/>
+                           <a href="http://www.blog.pythonlibrary.org/2016/05/18/python-3-an-intro-to-encryption/" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            pythonlibrary.org
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://caremad.io/2016/05/powering-pypi/" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Powering the Python Package Index
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            If you are a Python developer you use it every day, check out how the Python Package index is powered. Also shout out to the team that makes this thing go! Great work!
+                           </span>
+                           <br/>
+                           <a href="https://caremad.io/2016/05/powering-pypi/" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            caremad.io
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://hynek.me/articles/conditional-python-dependencies/" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Conditional Python Dependencies
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            A brief look at conditional Python dependencies.
+                           </span>
+                           <br/>
+                           <a href="https://hynek.me/articles/conditional-python-dependencies/" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            hynek.me
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="http://neopythonic.blogspot.ca/2016/05/union-syntax.html" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Union syntax
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            A write up on the Union syntax from Python\'s own BDFL Guido Van Rossum.
+                           </span>
+                           <br/>
+                           <a href="http://neopythonic.blogspot.ca/2016/05/union-syntax.html" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            blogspot.ca
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="http://www.dataschool.io/best-python-pandas-resources/" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Top 8 resources for learning data analysis with pandas
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Pretty good list of resources here!
+                           </span>
+                           <br/>
+                           <a href="http://www.dataschool.io/best-python-pandas-resources/" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            dataschool.io
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://www.peterbe.com/plog/deco" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Decorated Concurrency - Python multiprocessing made really really easy
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            We talked about Deco in last weeks issue, in this post the author goes in depth on this library.
+                           </span>
+                           <br/>
+                           <a href="https://www.peterbe.com/plog/deco" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            peterbe.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://medium.com/@tryexceptpass/a-python-ate-my-gui-971f2326ce59#.vo0musigx" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             A Python Ate My GUI
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Thoughts on the future of Python and graphical interfaces.
+                           </span>
+                           <br/>
+                           <a href="https://medium.com/@tryexceptpass/a-python-ate-my-gui-971f2326ce59#.vo0musigx" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            medium.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/mgrouchy" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @mgrouchy
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://lwn.net/Articles/643786/" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Python coroutines with async and await
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Definitely worth the read, discusses PEPs around adding new async and await keywords
+                           </span>
+                           <br/>
+                           <a href="https://lwn.net/Articles/643786/" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            lwn.net
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/myusuf3" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @myusuf3
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="https://threadsoftechnology.com/2016/05/15/how-to-write-a-command-line-tool-in-python/" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             How to Write a Command Line Tool in Python
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            Primer on writing your first CLI tool
+                           </span>
+                           <br/>
+                           <a href="https://threadsoftechnology.com/2016/05/15/how-to-write-a-command-line-tool-in-python/" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            threadsoftechnology.com
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/StefanDunkler" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @StefanDunkler
+                           </a>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a href="http://holger-peters.de/using-pyenv-and-tox.html" style="color: #AAAAAA;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                            <span style="font-family:georgia,serif; font-size:20px; line-height:1.2">
+                             Using Pyenv and Tox
+                            </span>
+                           </a>
+                           <br/>
+                           <span style="font-family:georgia,serif; font-size:16px; line-height:1.2">
+                            combining the powers of pyenv and tox!
+                           </span>
+                           <br/>
+                           <a href="http://holger-peters.de/using-pyenv-and-tox.html" style="color: #3399CC;font-weight: normal;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            holger-peters.de
+                           </a>
+                           <br/>
+                           Shared by
+                           <a href="http://twitter.com/myusuf3" style="font-weight: bold;color: #3399CC;text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            @myusuf3
+                           </a>
+                           <br/>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                       <!--[if mso]></td><![endif]-->
+                       <!--[if mso]></tr></table><![endif]-->
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <!-- // END BODY -->
+          </td>
+         </tr>
+         <tr>
+          <td align="center" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+           <!-- BEGIN FOOTER // -->
+           <table border="0" cellpadding="0" cellspacing="0" id="templateFooter" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #F2F2F2;border-top: 0;border-bottom: 0;" width="100%">
+            <tbody>
+             <tr>
+              <td align="center" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+               <table border="0" cellpadding="0" cellspacing="0" class="templateContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="600">
+                <tbody>
+                 <tr>
+                  <td class="footerContainer" style="padding-top: 10px;padding-bottom: 10px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                   <table border="0" cellpadding="0" cellspacing="0" class="mcnShareBlock" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                    <tbody class="mcnShareBlockOuter">
+                     <tr>
+                      <td class="mcnShareBlockInner" style="padding: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                       <table border="0" cellpadding="0" cellspacing="0" class="mcnShareContentContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                        <tbody>
+                         <tr>
+                          <td align="left" style="padding-top: 9px;padding-left: 9px;padding-bottom: 0;padding-right: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                           <table border="0" cellpadding="0" cellspacing="0" class="mcnShareContent" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <tbody>
+                             <tr>
+                              <td class="mcnShareContentItemContainer" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                               <table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                <tbody>
+                                 <tr>
+                                  <td class="mcnShareContentItemContainer" style="padding-right: 10px;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                                   <table border="0" cellpadding="0" cellspacing="0" class="mcnShareContentItem" style="border-collapse: separate;background-color: #FFFFFF;border: 1px solid #CCCCCC;border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="">
+                                    <tbody>
+                                     <tr>
+                                      <td align="left" style="padding-top: 5px;padding-right: 10px;padding-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="middle">
+                                       <table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="">
+                                        <tbody>
+                                         <tr>
+                                          <td align="center" class="mcnShareIconContent" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="middle" width="18">
+                                           <a href="http://www.instapaper.com/hello2?url=http%3A%2F%2Feepurl.com%2Fb2uofX&amp;title=Pycoders+Weekly+%28Issue+%23217%29%3A++I%2FO" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                                            <img class="" height="18" src="http://cdn-images.mailchimp.com/icons/social-block/light-instapaper-128.png" style="display: block;border: 0;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" width="18"/>
+                                           </a>
+                                          </td>
+                                          <td align="left" class="mcnShareTextContent" style="padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="middle">
+                                           <a href="http://www.instapaper.com/hello2?url=http%3A%2F%2Feepurl.com%2Fb2uofX&amp;title=Pycoders+Weekly+%28Issue+%23217%29%3A++I%2FO" style="color: #505050;font-family: Arial;font-size: 12px;text-decoration: none;font-weight: normal;line-height: 100%;text-align: center;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="">
+                                            Read Later
+                                           </a>
+                                          </td>
+                                         </tr>
+                                        </tbody>
+                                       </table>
+                                      </td>
+                                     </tr>
+                                    </tbody>
+                                   </table>
+                                  </td>
+                                 </tr>
+                                </tbody>
+                               </table>
+                               <table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                <tbody>
+                                 <tr>
+                                  <td class="mcnShareContentItemContainer" style="padding-right: 10px;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                                   <table border="0" cellpadding="0" cellspacing="0" class="mcnShareContentItem" style="border-collapse: separate;background-color: #FFFFFF;border: 1px solid #CCCCCC;border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="">
+                                    <tbody>
+                                     <tr>
+                                      <td align="left" style="padding-top: 5px;padding-right: 10px;padding-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="middle">
+                                       <table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="">
+                                        <tbody>
+                                         <tr>
+                                          <td align="center" class="mcnShareIconContent" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="middle" width="18">
+                                           <a href="http://twitter.com/intent/tweet?text=Pycoders+Weekly+%28Issue+%23217%29%3A++I%2FO: http%3A%2F%2Feepurl.com%2Fb2uofX" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                                            <img class="" height="18" src="http://cdn-images.mailchimp.com/icons/social-block/light-twitter-128.png" style="display: block;border: 0;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" width="18"/>
+                                           </a>
+                                          </td>
+                                          <td align="left" class="mcnShareTextContent" style="padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="middle">
+                                           <a href="http://twitter.com/intent/tweet?text=Pycoders+Weekly+%28Issue+%23217%29%3A++I%2FO: http%3A%2F%2Feepurl.com%2Fb2uofX" style="color: #505050;font-family: Arial;font-size: 12px;text-decoration: none;font-weight: normal;line-height: 100%;text-align: center;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="">
+                                            Tweet
+                                           </a>
+                                          </td>
+                                         </tr>
+                                        </tbody>
+                                       </table>
+                                      </td>
+                                     </tr>
+                                    </tbody>
+                                   </table>
+                                  </td>
+                                 </tr>
+                                </tbody>
+                               </table>
+                               <table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                <tbody>
+                                 <tr>
+                                  <td class="mcnShareContentItemContainer" style="padding-right: 0;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                                   <table border="0" cellpadding="0" cellspacing="0" class="mcnShareContentItem" style="border-collapse: separate;background-color: #FFFFFF;border: 1px solid #CCCCCC;border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="">
+                                    <tbody>
+                                     <tr>
+                                      <td align="left" style="padding-top: 5px;padding-right: 10px;padding-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="middle">
+                                       <table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="">
+                                        <tbody>
+                                         <tr>
+                                          <td align="center" class="mcnShareIconContent" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="middle" width="18">
+                                           <a href="http://us4.forward-to-friend.com/forward?u=9735795484d2e4c204da82a29&amp;id=80859d91a4&amp;e=e69c6f9608" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="_blank">
+                                            <img class="" height="18" src="http://cdn-images.mailchimp.com/icons/social-block/light-forwardtofriend-128.png" style="display: block;border: 0;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" width="18"/>
+                                           </a>
+                                          </td>
+                                          <td align="left" class="mcnShareTextContent" style="padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="middle">
+                                           <a href="http://us4.forward-to-friend.com/forward?u=9735795484d2e4c204da82a29&amp;id=80859d91a4&amp;e=e69c6f9608" style="color: #505050;font-family: Arial;font-size: 12px;text-decoration: none;font-weight: normal;line-height: 100%;text-align: center;word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target="">
+                                            Forward to Friend
+                                           </a>
+                                          </td>
+                                         </tr>
+                                        </tbody>
+                                       </table>
+                                      </td>
+                                     </tr>
+                                    </tbody>
+                                   </table>
+                                  </td>
+                                 </tr>
+                                </tbody>
+                               </table>
+                              </td>
+                             </tr>
+                            </tbody>
+                           </table>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+                    <tbody class="mcnTextBlockOuter">
+                     <tr>
+                      <td class="mcnTextBlockInner" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top">
+                       <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="600">
+                        <tbody>
+                         <tr>
+                          <td class="mcnTextContent" style="padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 11px;line-height: 125%;text-align: left;" valign="top">
+                           <em>
+                            Copyright \xa9 2016 Pycoder\'s Weekly, All rights reserved.
+                           </em>
+                           <br/>
+                           <br/>
+                           <br/>
+                           <a class="utilityLink" href="http://pycoders.us4.list-manage1.com/unsubscribe?u=9735795484d2e4c204da82a29&amp;id=64134e0a27&amp;e=e69c6f9608&amp;c=80859d91a4" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-weight: normal;text-decoration: underline;">
+                            unsubscribe from this list
+                           </a>
+                           <a class="utilityLink" href="http://pycoders.us4.list-manage.com/profile?u=9735795484d2e4c204da82a29&amp;id=64134e0a27&amp;e=e69c6f9608" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-weight: normal;text-decoration: underline;">
+                            update subscription preferences
+                           </a>
+                           <br/>
+                           <br/>
+                           <a href="http://www.mailchimp.com/monkey-rewards/?utm_source=freemium_newsletter&amp;utm_medium=email&amp;utm_campaign=monkey_rewards&amp;aid=9735795484d2e4c204da82a29&amp;afl=1">
+                            <img alt="Email Marketing Powered by MailChimp" border="0" src="http://gallery.mailchimp.com/089443193dd93823f3fed78b4/images/banner1.gif" title="MailChimp Email Marketing"/>
+                           </a>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <!-- // END FOOTER -->
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- // END TEMPLATE -->
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </center>
+  '
+ </body>
+</html>
